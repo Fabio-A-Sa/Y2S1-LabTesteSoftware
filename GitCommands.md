@@ -68,6 +68,8 @@ $ git -a -m "Message" || git -am "Message"                      # Add + Commit
 $ git log                                                       # View all changes
 $ git log -X                                                    # View previous X changes
 $ git log -X --oneline                                          # View previous X changes, summarized
+
+$ git status                                                    # To see a list with all files tracked and untracked
 ```
 
 ### 2.3 - Merge
@@ -75,7 +77,7 @@ $ git log -X --oneline                                          # View previous 
 ```bash
        
 ```
-
+ 
 ### 2.4 - Branch
 
 ```bash
@@ -85,9 +87,10 @@ $ git log -X --oneline                                          # View previous 
 ### 2.5 - Remote
 
 ```bash
-       
-```   
-
+$ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
+$ git push origin branch_name                                   # To upload modifications at branch_name in remote repository
+$ git pull                                                      # To download latest modifications in remote repository
+```
 
 
 <br>
