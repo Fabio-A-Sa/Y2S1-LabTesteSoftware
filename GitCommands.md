@@ -55,25 +55,38 @@ $ git init                                                      # To create a lo
 $ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
 ```
 
-### 2.2 - Remove
+### 2.2 - Commits
 
 ```bash
+$ git add fileName.extension                                    # To add 
+$ git add . || git add --all || git add -a                      #
 
+$ git commit -m "Explain your changes"                          # To associate changes and topics
+$ git commit -m "Explain your changes" --date "X days ago"      # To add a commit X days before the current day
+$ git -a -m "Message" || git -am "Message"                        # To
+
+$ git log 
+$ git log -X
+$ git log -X --oneline
 ```
 
-### 2.3 - Move and Rename
+### 2.3 - Merge
 
 ```bash
        
 ```
 
-### 2.4 - View
+### 2.4 - Branch
 
 ```bash
        
 ```   
 
+### 2.5 - Remote
 
+```bash
+       
+```   
 
 
 
