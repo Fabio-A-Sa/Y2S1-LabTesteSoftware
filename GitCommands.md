@@ -1,13 +1,32 @@
 # Git Commands
 
 "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems). <br>
-Git was created by Linus Torvalds in 2005 for development of the Linux kernel." - *in Wikipédia*. <br>, 
+Git was created by Linus Torvalds in 2005 for development of the Linux kernel." - *in Wikipédia*. <br>
 
-Topics
-- [X] Directories management; 
-- [X] 
+---
 
-Explanation
+### Topics
+- [X] Directories and files management:
+  - Add
+  - Remove
+  - Move
+  - View
+
+- [X] Git directories:
+  - Initialize
+  - Gitignore
+  - Commits
+  - Branch
+  - Merge
+  - Remote
+
+---
+
+## 1 - Directories and files management: <br>
+
+### 1.1 - 
+
+## 2 - Git: <br>   
 
 
 ```
