@@ -3,8 +3,6 @@
 "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems). <br>
 Git was created by Linus Torvalds in 2005 for development of the Linux kernel." - *in Wikipédia*. <br>
 
----
-
 ### Topics
 - [X] Directories and files management:
   - Add
@@ -20,16 +18,20 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
   - Merge
   - Remote
 
----
-
 ## 1 - Directories and files management: <br>
 
-### 1.1 - 
+### 1.1 - Add
+
+```bash
+mkdir directoryName                                           // To create a folder
+
+echo "This is a first line of file" > text.txt                // To create and write in a text file 
+```
 
 ## 2 - Git: <br>   
 
 
-```
+```bash
 from math import pow, sqrt
 
 def Points_to_Area (points):
