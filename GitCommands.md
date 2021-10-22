@@ -31,7 +31,10 @@ $ rm fileName                                                   # To remove a fi
 ```bash
 $ mv oldName.extension newName.extension                        # To rename a file, to be done in a file's directory
 $ mv oldDirectory/ newDirectory/                                # To rename a folder
-$ mv fileName.extension ../newDirectory                         # To move a file to another folder in ../pdw directory
+$ mv fileName.extension ../newDirectory                         # To move a file to another folder in ../pwd directory
+
+$ cd folderName/                                                # Entry in a selected folder
+$ cd ..                                                         # Go back to previous folder
 ```
 
 ### 1.4 - View
@@ -40,33 +43,31 @@ $ mv fileName.extension ../newDirectory                         # To move a file
 $ tree.com //a                                                  # To view complete directory tree
 $ pwd                                                           # To view a current directory path
 $ ls                                                            # To view all files in current folder
-$ ls -ls                                                        # To view all files in current folder, including all hidden files
+$ ls -la                                                        # To view all files in current folder, including all hidden files
 ```   
 
 ## 2 - Git
 
-### 1.1 - Nothing
+### 2.1 - Initialize
 
 ```bash
-mkdir directoryName                                           # To create a folder
-
-echo "This is a first line of file" > text.txt                # To create and write in a text file 
-echo "Another letter" >> text.txt                             # More
+$ git init                                                      # To create a local repository
+$ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
 ```
 
-### 1.2 - Remove
+### 2.2 - Remove
 
 ```bash
 
 ```
 
-### 1.3 - Move and Rename
+### 2.3 - Move and Rename
 
 ```bash
        
 ```
 
-### 1.4 - View
+### 2.4 - View
 
 ```bash
        
@@ -76,7 +77,7 @@ echo "Another letter" >> text.txt                             # More
 
 
 
-
+<br>
 
 ### Credits: <br>
 [Git](https://web.fe.up.pt/~arestivo/presentation/git/#1), by André Restivo <br>
