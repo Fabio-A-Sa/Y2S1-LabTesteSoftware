@@ -70,6 +70,7 @@ $ git log -X                                                    # View previous 
 $ git log -X --oneline                                          # View previous X changes, summarized
 
 $ git status                                                    # To see a list with all files tracked and untracked
+$ git status -s                                                 # 
 ```
 
 ### 2.3 - Merge
