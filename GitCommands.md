@@ -23,23 +23,64 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
 ### 1.1 - Add
 
 ```bash
-mkdir directoryName                                           // To create a folder
+mkdir directoryName                                           # To create a folder
 
-echo "This is a first line of file" > text.txt                // To create and write in a text file 
+echo "This is a first line of file" > text.txt                # To create and write in a text file 
+echo "Another letter" >> text.txt                             # More
 ```
 
-## 2 - Git: <br>   
-
+### 1.2 - Remove
 
 ```bash
-from math import pow, sqrt
 
-def Points_to_Area (points):
-
-    area = round((pow((sqrt(points)-1),2))*pow(1.39,2),2)
-    return "Available area: {}".format(area)
 ```
-<br>
+
+### 1.3 - Move and Rename
+       
+```bash
+       
+```
+
+### 1.4 - View
+
+```bash
+       
+```   
+
+## 2 - Git
+
+### 1.1 - Nothing
+
+```bash
+mkdir directoryName                                           # To create a folder
+
+echo "This is a first line of file" > text.txt                # To create and write in a text file 
+echo "Another letter" >> text.txt                             # More
+```
+
+### 1.2 - Remove
+
+```bash
+
+```
+
+### 1.3 - Move and Rename
+
+```bash
+       
+```
+
+### 1.4 - View
+
+```bash
+       
+```   
+
+
+
+
+
+
 
 ### Credits: <br>
 [Git](https://web.fe.up.pt/~arestivo/presentation/git/#1), by André Restivo <br>
