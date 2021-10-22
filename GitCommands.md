@@ -75,18 +75,21 @@ $ git status                                                    # To see a list 
 ### 2.3 - Merge
 
 ```bash
-
+$ git merge testing                                             # To merge two or more branch modifications, to do in main branch
+$ git commit                                                    # If is conflict, implement this command before solve it
 ```
  
 ### 2.4 - Branch
 
 ```bash
+$ git branch                                                    # To view all of created branches
+
 $ git branch newBranchName                                      # To create a new branch
 $ git checkout newBranchName                                    # To modify the console to the new branch path
 $ git checkout -b newBranchName                                 # Create and modify
 
-$ git
-$
+$ git branch -d branchName                                      # To delete a certain branch locally
+$ git push origin --delete branchName                           # To delete a certain branch remotely
 ```   
 
 ### 2.5 - Remote
