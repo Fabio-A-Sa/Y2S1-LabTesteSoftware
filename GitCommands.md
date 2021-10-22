@@ -83,7 +83,7 @@ $ git commit                                                    # If is conflict
  
 ### 2.4 - Branch
 
-```properties
+```bash
 $ git branch                                                    # To view all of created branches
 
 $ git branch newBranchName                                      # To create a new branch
@@ -96,7 +96,7 @@ $ git push origin --delete branchName                           # To delete a ce
 
 ### 2.5 - Remote
 
-```bat
+```bash
 $ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
 $ git push origin branch_name                                   # To upload modifications at branch_name in remote repository
 $ git pull                                                      # To download latest modifications in remote repository
