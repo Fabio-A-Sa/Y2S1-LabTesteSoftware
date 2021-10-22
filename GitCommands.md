@@ -75,13 +75,18 @@ $ git status                                                    # To see a list 
 ### 2.3 - Merge
 
 ```bash
-       
+
 ```
  
 ### 2.4 - Branch
 
 ```bash
-       
+$ git branch newBranchName                                      # To create a new branch
+$ git checkout newBranchName                                    # To modify the console to the new branch path
+$ git checkout -b newBranchName                                 # Create and modify
+
+$ git
+$
 ```   
 
 ### 2.5 - Remote
