@@ -102,10 +102,12 @@ $ git push origin branch_name                                   # To upload modi
 $ git pull                                                      # To download latest modifications in remote repository
 ```
 
-### 2.6 - Gitignore
+### 2.6 - [Gitignore](https://git-scm.com/docs/gitignore)
 
 ```bash
-
+folderName/                                                       # Don't commit this folder
+fileName.extension                                                # Don't commit this file
+!name/**/*.txt                                                    # Don't ignore any .txt files inside directory name
 ```
 
 
