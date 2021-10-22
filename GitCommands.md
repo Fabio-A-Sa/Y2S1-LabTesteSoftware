@@ -97,6 +97,12 @@ $ git push origin branch_name                                   # To upload modi
 $ git pull                                                      # To download latest modifications in remote repository
 ```
 
+### 2.6 - Gitignore
+
+```bash
+$ 
+```
+
 
 <br>
 
