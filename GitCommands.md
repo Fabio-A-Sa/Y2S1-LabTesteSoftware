@@ -8,34 +8,39 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
 ### 1.1 - Add
 
 ```bash
-mkdir directoryName                                           # To create a folder
+$ mkdir directoryName                                           # To create a folder
 
-echo "This is a first line of file" > text.txt                # To create and write in a text file 
-echo "Another line" > text.txt                                # Substitution of first line
-echo "More line" >> text.txt                                  # Append a line after "Another line\n"
+$ echo "This is a first line of file" > text.txt                # To create and write in a text file 
+$ echo "Another line" > text.txt                                # Substitution of first line
+$ echo "More line" >> text.txt                                  # Append a line after "Another line\n"
 
-touch aSimpleFile.fileExtension                               # To create a file with a certain extension in current directory
+$ touch aSimpleFile.fileExtension                               # To create a file with a certain extension in current directory
 ```
 
 ### 1.2 - Remove
 
 ```bash
-rmdir directoryName || rm directoryName                       # To remove an empty folder
-rm -r directoryName                                           # To remove a non-empty folder
+$ rmdir directoryName || rm directoryName                       # To remove an empty folder
+$ rm -r directoryName                                           # To remove a non-empty folder
 
-rm fileNamels                                                 # To remove a file
+$ rm fileName                                                   # To remove a file
 ```
 
-### 1.3 - Move and Rename
+### 1.3 - Rename and Move
        
 ```bash
-       
+$ mv oldName.extension newName.extension                        # To rename a file, to be done in a file's directory
+$ mv oldDirectory/ newDirectory/                                # To rename a folder
+$ mv fileName.extension ../newDirectory                         # To move a file to another folder in ../pdw directory
 ```
 
 ### 1.4 - View
 
 ```bash
-       
+$ tree.com //a                                                  # To view complete directory tree
+$ pwd                                                           # To view a current directory path
+$ ls                                                            # To view all files in current folder
+$ ls -ls                                                        # To view all files in current folder, including all hidden files
 ```   
 
 ## 2 - Git
