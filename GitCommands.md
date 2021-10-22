@@ -68,6 +68,7 @@ $ git -a -m "Message" || git -am "Message"                      # Add + Commit
 $ git log                                                       # View all changes
 $ git log -X                                                    # View previous X changes
 $ git log -X --oneline                                          # View previous X changes, summarized
+$ git log -X --patch                                            # View modifications
 
 $ git status                                                    # To see a list with all files tracked and untracked
 $ git status -s                                                 # To see a summarized list with deleted and modified files
