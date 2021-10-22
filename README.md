@@ -16,6 +16,9 @@ This repository contains all the exercises and assessments of the UC Algorithms 
 ### My Drafts <br/>
 Pieces of code for exercises and assessments, notes that I take during practical classes and other experiences using C and C++ languages. It is an authentic disorganized notebook. <br/>
 
+### Git Commands <br>
+A summary and explanation of commands used in git bash terminal.
+
 ### Notes
 Notes that I take during theoretical lectures.<br/>
 
