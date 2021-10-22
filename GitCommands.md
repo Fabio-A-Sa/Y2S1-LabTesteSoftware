@@ -58,16 +58,16 @@ $ git clone remoteRepositoryLink                                # To download a 
 ### 2.2 - Commits
 
 ```bash
-$ git add fileName.extension                                    # To add 
-$ git add . || git add --all || git add -a                      #
+$ git add fileName.extension                                    # To add a certain file
+$ git add . || git add --all || git add -a                      # To add all modified files and folders
 
-$ git commit -m "Explain your changes"                          # To associate changes and topics
+$ git commit -m "Explain your changes"                          # To associate latest changes to a message
 $ git commit -m "Explain your changes" --date "X days ago"      # To add a commit X days before the current day
-$ git -a -m "Message" || git -am "Message"                        # To
+$ git -a -m "Message" || git -am "Message"                      # Add + Commit
 
-$ git log 
-$ git log -X
-$ git log -X --oneline
+$ git log                                                       # View all changes
+$ git log -X                                                    # View previous X changes
+$ git log -X --oneline                                          # View previous X changes, summarized
 ```
 
 ### 2.3 - Merge
