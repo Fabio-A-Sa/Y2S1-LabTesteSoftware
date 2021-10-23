@@ -109,8 +109,14 @@ class Basis {
 
     public static void SomeDataStructures() {
 
+        final double PI = 3.14159;
+        System.out.println("Contants: " + PI);
+
         System.out.println("Arrays and 2D arrays:");
-        String[][] myName = {   {"F", "á", "b", "i", "o"}, {"A", "r", "a", "ú", "j", "o"}, {"d", "e"}, {"S", "á"}};
+        String[][] myName = {   {"F", "á", "b", "i", "o"},
+                                {"A", "r", "a", "ú", "j", "o"},
+                                {"d", "e"},
+                                {"S", "á"}                          };
         for (int i = 0 ; i < myName.length ; i++ ) {
             for (int j = 0 ; j < myName[i].length ; j++ ) {
                 System.out.print(myName[i][j]);
@@ -119,7 +125,58 @@ class Basis {
         }
 
         System.out.println("\nArrayList:");
-        ArrayList
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Cão");
+        animals.add("Gato");
+        animals.add("Peixe");
+        for (String animal : animals) { System.out.println(animal) ; }
+
+        System.out.println("\nClasses:");
+        Student me = new Student();
+
+    }
+}
+
+class Student {
+
+    String name;
+    char gender;
+    int up, age;
+    double grade;
+
+    Student () {
+        this.name = "UNKNOWN";
+        this.age = 0;
+        this.gender = 'U';
+        this.up = 999999999;
+        this.grade = 0.0;
+    }
+
+    Student (String name, int age, char gender, int up, double grade) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.up = up;
+        this.grade = grade;
+    }
+
+    // all set methods
+    public void setName(String name) { this.name = name; }
+    public void setUp(int up) { this.up = up; }
+    public void setAge(int age) { this.age = age; }
+    public void setGender(char gender) { this.gender = gender; }
+    public void setGrade(double grade) { this.grade = grade; }
+
+    // all get methods
+    public String getName(String name) { return name; }
+    public int getUp(int up) { return up; }
+    public int getAge(int age) { return age; }
+    public char getGender(char gender) { return gender; }
+    public double getGrade(double grade) { return grade; }
+
+    // other methods
+
+    public void Presentation() {
 
     }
 }
