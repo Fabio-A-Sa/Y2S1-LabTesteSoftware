@@ -132,17 +132,22 @@ class Basis {
         for (String animal : animals) { System.out.println(animal) ; }
 
         System.out.println("\nClasses:");
-        Student me = new Student();
+        Student me = new Student("Fabio", 19, 'M', 202007658, 10);
+        me.Presentation();
+        me.setAge(10); me.setGrade(15.6); me.setName("Fabio Sá");
+        me.Presentation();
+        System.out.println("Gender = " + me.getGender());
 
+        // continue in https://www.youtube.com/watch?v=xk4_1vDrzzo at 03:36:00
     }
 }
 
 class Student {
 
-    String name;
-    char gender;
-    int up, age;
-    double grade;
+    private String name;
+    private char gender;
+    public int up, age;
+    private double grade;
 
     Student () {
         this.name = "UNKNOWN";
@@ -168,15 +173,15 @@ class Student {
     public void setGrade(double grade) { this.grade = grade; }
 
     // all get methods
-    public String getName(String name) { return name; }
-    public int getUp(int up) { return up; }
-    public int getAge(int age) { return age; }
-    public char getGender(char gender) { return gender; }
-    public double getGrade(double grade) { return grade; }
+    public String getName() { return name; }
+    public int getUp() { return up; }
+    public int getAge() { return age; }
+    public char getGender() { return gender; }
+    public double getGrade() { return grade; }
 
     // other methods
 
     public void Presentation() {
-
+        System.out.println(name + " have " + age + " years old, with upCode = " + up + " and grade " + grade + " values!");
     }
 }
