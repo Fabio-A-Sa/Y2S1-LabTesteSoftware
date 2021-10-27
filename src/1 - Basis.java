@@ -9,7 +9,7 @@ class Basis {
         //Inputs();
         //Calculator();
         //SomeDataStructures();
-        Inheritance();
+        //Inheritance();
     }
 
     public static void HelloWorld () {
@@ -144,7 +144,7 @@ class Basis {
     public static void Inheritance () {
 
         Car myCar = new Car("my", 2018);
-        cout << myCar.getWheels() << endl ;
+        System.out.print(myCar.getWheels());
 
     }
 }
