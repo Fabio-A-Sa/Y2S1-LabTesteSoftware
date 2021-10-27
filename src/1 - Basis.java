@@ -158,19 +158,24 @@ class Basis {
         String name = "Lusiadas.txt";
         File file = new File(name);
         if (file.exists()) {
-            System.out.println("File " + name + " exists");
+            System.out.println("\n\nFile " + name + " exists");
 
             // Extracts data and show content
             try {
                 FileReader reader = new FileReader(name);
                 int data = reader.read();
+
+                System.out.println("\n" + name + ": \n");
                 while (data != -1) {
-                    System.out.println((char)data);
+                    System.out.print((char)data);
                     data = reader.read();
                 }
                 reader.close();
-            } catch
-
+            } catch (FileNotFoundException exception) {
+                exception.printStackTrace();
+            } catch (IOException exception) {
+                exception.printStackTrace();
+            }
 
         } else {
             System.out.println("File not found");

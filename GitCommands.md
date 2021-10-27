@@ -72,6 +72,9 @@ $ git log -X --patch                                            # View modificat
 
 $ git status                                                    # To see a list with all files tracked and untracked
 $ git status -s                                                 # To see a summarized list with deleted and modified files
+
+$ git checkout -- fileName                                      # To revert changes in a single file
+$ git checkout --hard                                           # To reset non-saved modifications in all files
 ```
 
 ### 2.3 - Merge
