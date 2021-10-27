@@ -75,7 +75,10 @@ $ git status -s                                                 # To see a summa
 
 $ git checkout -- fileName                                      # To revert changes in a single file
 $ git checkout --hard                                           # To reset non-saved modifications in all files
-$ git 
+$ git reset HEAD fileName                                       # To unstage a single file
+$ git reset                                                     # To unstage all staged files
+$ git reset --hard commitID                                     # To revert changes too
+$ git reset commitID                                            # To revert changes too
 ```
 
 ### 2.3 - Merge
@@ -104,6 +107,8 @@ $ git push origin --delete branchName                           # To delete a ce
 $ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
 $ git push origin branch_name                                   # To upload modifications at branch_name in remote repository
 $ git pull                                                      # To download latest modifications in remote repository
+$ git remote add origin git@github.com:remoteRepositoryLink     # Using a GitHub repository as reference
+$ git remote -v                                                 # To view all add remote repository             
 ```
 
 ### 2.6 - [Gitignore](https://git-scm.com/docs/gitignore)
