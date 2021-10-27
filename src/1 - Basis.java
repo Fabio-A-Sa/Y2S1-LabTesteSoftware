@@ -1,7 +1,10 @@
 
-import java.util.Scanner;       // To scan user inputs
-import java.util.ArrayList;     // To use ArrayList data structure
-import java.io.File;            // To manipulating files .txt
+import java.util.Scanner;                   // To scan user inputs
+import java.util.ArrayList;                 // To use ArrayList data structure
+import java.io.File;                        // To use files
+import java.io.FileReader;                  // To read a file content
+import java.io.FileNotFoundException;       // To raise an exception
+import java.io.IOException;                 // To raise an exception too
 
 class Basis {
 
@@ -155,9 +158,22 @@ class Basis {
         String name = "Lusiadas.txt";
         File file = new File(name);
         if (file.exists()) {
-            System.out.println("File" + name + "exists");
+            System.out.println("File " + name + " exists");
+
+            // Extracts data and show content
+            try {
+                FileReader reader = new FileReader(name);
+                int data = reader.read();
+                while (data != -1) {
+                    System.out.println((char)data);
+                    data = reader.read();
+                }
+                reader.close();
+            } catch
+
+
         } else {
-            System.out.println("Non");
+            System.out.println("File not found");
         }
     }
 }
