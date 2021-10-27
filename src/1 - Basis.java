@@ -156,6 +156,8 @@ class Basis {
         File file = new File(name);
         if (file.exists()) {
             System.out.println("File" + name + "exists");
+        } else {
+            System.out.println("Non");
         }
     }
 }
