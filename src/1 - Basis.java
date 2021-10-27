@@ -143,7 +143,9 @@ class Basis {
 
     public static void Inheritance () {
 
-        System.out.print("Hello everyone!");
+        Car myCar = new Car("my", 2018);
+        cout << myCar.getWheels() << endl ;
+
     }
 }
 
@@ -185,7 +187,6 @@ class Student {
     public double getGrade() { return grade; }
 
     // other methods
-
     public void Presentation() {
         System.out.println(name + " have " + age + " years old, with upCode = " + up + " and grade " + grade + " values!");
     }
@@ -193,14 +194,34 @@ class Student {
 
 class Vehicle {
 
+    public String name;
+    public int year;
 
+    Vehicle () {
+        this.name = "UNKNOWN";
+        this.year = 0000;
+    }
+
+    Vehicle (String name, int year) {
+        this.name = name;
+        this.year = year;
+    }
+
+    public void Run () { System.out.println("The vehicle is moving"); }
+    public void Stop () { System.out.println("The vehicle is stopped"); }
 }
 
 class Car extends Vehicle {
 
+    public int wheels = 4 ;
+    Car(String name, int year) {
+        super(name, year);          // to use a parent class
+    }
+    public int getWheels() { return this.wheels; }
 }
 
 class Bike extends Vehicle {
 
-    int
+    public int windows = 0 ;
+    public boolean haveWindows() { return windows > 0 ; }
 }
