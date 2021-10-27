@@ -75,6 +75,7 @@ $ git status -s                                                 # To see a summa
 
 $ git checkout -- fileName                                      # To revert changes in a single file
 $ git checkout --hard                                           # To reset non-saved modifications in all files
+$ git 
 ```
 
 ### 2.3 - Merge
