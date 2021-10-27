@@ -152,6 +152,11 @@ class Basis {
 
     public static void UsingFiles () {
 
+        String name = "Lusiadas.txt";
+        File file = new File(name);
+        if (file.exists()) {
+            System.out.println("File" + name + "exists");
+        }
     }
 }
 
