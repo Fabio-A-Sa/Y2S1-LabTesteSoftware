@@ -8,7 +8,8 @@ class Basis {
         //HelloWorld();
         //Inputs();
         //Calculator();
-        SomeDataStructures();
+        //SomeDataStructures();
+        Inheritance();
     }
 
     public static void HelloWorld () {
@@ -138,7 +139,11 @@ class Basis {
         me.Presentation();
         System.out.println("Gender = " + me.getGender());
 
-        // continue in https://www.youtube.com/watch?v=xk4_1vDrzzo at 03:36:00
+    }
+
+    public static void Inheritance () {
+
+        System.out.print("Hello everyone!");
     }
 }
 
@@ -184,4 +189,18 @@ class Student {
     public void Presentation() {
         System.out.println(name + " have " + age + " years old, with upCode = " + up + " and grade " + grade + " values!");
     }
+}
+
+class Vehicle {
+
+
+}
+
+class Car extends Vehicle {
+
+}
+
+class Bike extends Vehicle {
+
+    int
 }
