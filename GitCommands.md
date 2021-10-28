@@ -72,13 +72,6 @@ $ git log -X --patch                                            # View modificat
 
 $ git status                                                    # To see a list with all files tracked and untracked
 $ git status -s                                                 # To see a summarized list with deleted and modified files
-
-$ git checkout -- fileName                                      # To revert changes in a single file
-$ git checkout --hard                                           # To reset non-saved modifications in all files
-$ git reset HEAD fileName                                       # To unstage a single file
-$ git reset                                                     # To unstage all staged files
-$ git reset --hard commitID                                     # To revert changes too
-$ git reset commitID                                            # To revert changes too
 ```
 
 ### 2.3 - Merge
@@ -111,7 +104,18 @@ $ git remote add origin git@github.com:remoteRepositoryLink     # Using a GitHub
 $ git remote -v                                                 # To view all add remote repository             
 ```
 
-### 2.6 - [Gitignore](https://git-scm.com/docs/gitignore)
+### 2.6 - Reverting
+
+```bash
+$ git checkout -- fileName                                      # To revert changes in a single file
+$ git checkout --hard                                           # To reset non-saved modifications in all files
+$ git reset HEAD fileName                                       # To unstage a single file
+$ git reset                                                     # To unstage all staged files
+$ git reset --hard commitID                                     # To revert changes too
+$ git reset commitID                                            # To revert changes too
+```
+
+### 2.7 - [Gitignore](https://git-scm.com/docs/gitignore)
 
 ```bash
 folderName/                                                       # Don't commit this folder
