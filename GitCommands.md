@@ -102,7 +102,7 @@ $ git push origin branch_name                                   # To upload modi
 $ git fetch                                                     # To download latest modifications in remote repository
 $ git pull                                                      # To download latest modifications in remote repository and merge them
 $ git remote add origin git@github.com:remoteRepositoryLink     # Using a GitHub repository as reference
-
+$ git checkout --track origin/newBranch                         # To create a new branch which can be viewed in remote or local repository
 $ git remote -v                                                 # To view all add remote repository             
 ```
 
