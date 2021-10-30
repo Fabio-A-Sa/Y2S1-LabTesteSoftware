@@ -109,12 +109,12 @@ $ git remote -v                                                 # To view all ad
 ### 2.6 - Reverting
 
 ```bash
-$ git checkout -- fileName                                      # To revert changes in a single file
-$ git checkout --hard                                           # To reset non-saved modifications in all files
-$ git reset HEAD fileName                                       # To unstage a single file
-$ git reset                                                     # To unstage all staged files
-$ git reset --hard commitID                                     # To revert changes too
-$ git reset commitID                                            # To revert changes too
+$ git checkout -- fileName                                      # To revert changes in a single file (not in stage)
+$ git checkout --hard                                           # To reset non-saved modifications in all files (not in stage)
+$ git reset HEAD fileName                                       # To revert a single file with add and without commit
+$ git reset                                                     # To revert all changes with add and without commit
+$ git reset --hard commitID                                     # To revert changes with commit and without push
+$ git revert commitID                                            # To revert changes with commit and push. Bad practise.
 ```
 
 ### 2.7 - [Gitignore](https://git-scm.com/docs/gitignore)
