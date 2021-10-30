@@ -99,8 +99,10 @@ $ git push origin --delete branchName                           # To delete a ce
 ```bash
 $ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
 $ git push origin branch_name                                   # To upload modifications at branch_name in remote repository
-$ git pull                                                      # To download latest modifications in remote repository
+$ git fetch                                                     # To download latest modifications in remote repository
+$ git pull                                                      # To download latest modifications in remote repository and merge them
 $ git remote add origin git@github.com:remoteRepositoryLink     # Using a GitHub repository as reference
+
 $ git remote -v                                                 # To view all add remote repository             
 ```
 
