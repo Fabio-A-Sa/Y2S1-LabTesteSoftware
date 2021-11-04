@@ -123,6 +123,7 @@ class Basis {
                                 {"A", "r", "a", "ú", "j", "o"},
                                 {"d", "e"},
                                 {"S", "á"}                          };
+
         for (int i = 0 ; i < myName.length ; i++ ) {
             for (int j = 0 ; j < myName[i].length ; j++ ) {
                 System.out.print(myName[i][j]);
