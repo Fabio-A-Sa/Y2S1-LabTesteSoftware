@@ -1,20 +1,12 @@
 
 import java.util.Scanner;                   // To scan user inputs
-import java.util.ArrayList;                 // To use ArrayList data structure
-import java.io.File;                        // To use files
-import java.io.FileReader;                  // To read a file content
-import java.io.FileNotFoundException;       // To raise an exception
-import java.io.IOException;                 // To raise an exception too
 
-class Basis {
+class InputOutput {
 
     public static void run () {
-        //HelloWorld();
-        //Inputs();
-        //Calculator();
-        //SomeDataStructures();
-        //Inheritance();
-        UsingFiles();
+        HelloWorld();
+        Inputs();
+        Calculator();
     }
 
     public static void HelloWorld () {
