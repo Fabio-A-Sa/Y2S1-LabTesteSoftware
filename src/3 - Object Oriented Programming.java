@@ -1,9 +1,11 @@
+import java.util.Objects;
+
 class OOP {
 
     public static void run() {
 
-        createStudents();
-        //Heritance();
+        //createStudents();
+        Heritance();
     }
 
     public static void createStudents() {
@@ -17,6 +19,15 @@ class OOP {
     }
 
     public static void Heritance() {
+
+        Bike myBike = new Bike("BMX", 2017);
+        String answer = myBike.haveWindows() ? "My bike has windows" : "My bike has not windows";
+        System.out.println(answer);
+
+        Car myCar = new Car("Ferrari", 2021);
+        myCar.Run();
+        myCar.Stop();
+        System.out.println("My car has " + myCar.getWheels() + " wheels");
 
     }
 
