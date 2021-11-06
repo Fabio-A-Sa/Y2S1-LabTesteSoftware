@@ -1,9 +1,24 @@
 class OOP {
 
     public static void run() {
-        System.out.println("Run");
+
+        createStudents();
+        //Heritance();
     }
 
+    public static void createStudents() {
+
+        Student a = new Student();
+        a.setName("Araújo");
+        Student b = new Student("Fabio", 19, 'M', 202007658, 15.0);
+        b.Presentation();
+        String answer = a == b ? " is equal to " : " isn't equal to ";
+        System.out.println(a.getName() + answer + b.getName());
+    }
+
+    public static void Heritance() {
+
+    }
 
 }
 
@@ -52,8 +67,8 @@ class Student {
 
 class Vehicle {
 
-    public String name;
-    public int year;
+    private String name;
+    private int year;
 
     Vehicle () {
         this.name = "UNKNOWN";
@@ -72,14 +87,21 @@ class Vehicle {
 class Car extends Vehicle {
 
     public int wheels = 4 ;
-    Car(String name, int year) {
-        super(name, year);          // to use a parent class
+
+    Car (String name, int year) {
+        super(name, year);
     }
+
     public int getWheels() { return this.wheels; }
 }
 
 class Bike extends Vehicle {
 
     public int windows = 0 ;
+
+    Bike (String name, int year) {
+        super(name, year);
+    }
+
     public boolean haveWindows() { return windows > 0 ; }
 }
