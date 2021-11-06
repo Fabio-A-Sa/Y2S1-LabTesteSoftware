@@ -10,13 +10,17 @@ class DataStructures {
 
         final double PI = 3.14159;
         final double PHI = 1.612;
-        System.out.println("PI = " + PI + " and PHI = " + PHI);
+        System.out.println("\nPI = " + PI + " and PHI = " + PHI + "\n");
     }
 
     public static void Strings() {
 
-        String Feup = "Faculdade de Engenharia da Universidade do Porto";
-        
+        String FEUP = "Faculdade de Engenharia da Universidade do Porto";
+        String[] words = FEUP.replace(" ", "-").split("-");
+        for (String word : words) {
+            System.out.println(word.toUpperCase() + " " + word.toLowerCase());
+        }
+        System.out.println();
     }
 
     public static void Arrays() {
@@ -33,5 +37,6 @@ class DataStructures {
             }
             System.out.print(" ");
         }
+        System.out.println();
     }
 }

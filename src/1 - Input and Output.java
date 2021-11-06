@@ -4,9 +4,9 @@ import java.util.Scanner;                   // To scan user inputs
 class InputOutput {
 
     public static void run() {
-        HelloWorld();
-        Inputs();
-        Calculator();
+        //HelloWorld();
+        //Inputs();
+        //Calculator();
     }
 
     public static void HelloWorld() {
