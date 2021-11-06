@@ -2,7 +2,7 @@ class OOP {
 
     public static void run() {
 
-        //createStudents();
+        createStudents();
         Heritance();
     }
 
@@ -11,9 +11,10 @@ class OOP {
         Student a = new Student();
         a.setName("Araújo");
         Student b = new Student("Fabio", 19, 'M', 202007658, 15.0);
-        b.Presentation();
+        System.out.println();
+        a.Presentation();
         String answer = a == b ? " is equal to " : " isn't equal to ";
-        System.out.println(a.getName() + answer + b.getName());
+        System.out.println(a.getName() + answer + b.getName() + '\n');
     }
 
     public static void Heritance() {
@@ -25,10 +26,8 @@ class OOP {
         Car myCar = new Car("Ferrari", 2021);
         myCar.Run();
         myCar.Stop();
-        System.out.println("My car has " + myCar.getWheels() + " wheels");
-
+        System.out.println("My car has " + myCar.getWheels() + " wheels\n");
     }
-
 }
 
 class Student {
@@ -72,6 +71,13 @@ class Student {
 }
 
 // Abstract class --> only child classes can be implemented
+// Interface --> .h files in C++, it declares some methods that will be implemented later in classes
+
+interface Components {
+    public int getWheels();
+    public boolean haveWindows();
+}
+
 abstract class Vehicle {
 
     private String name;
@@ -91,7 +97,7 @@ abstract class Vehicle {
     public void Stop () { System.out.println("The vehicle is stopped"); }
 }
 
-class Car extends Vehicle {
+class Car extends Vehicle implements Components {
 
     public int wheels = 4 ;
 
@@ -100,6 +106,7 @@ class Car extends Vehicle {
     }
 
     public int getWheels() { return this.wheels; }
+    public boolean haveWindows() { return true; }
 }
 
 class Bike extends Vehicle {
