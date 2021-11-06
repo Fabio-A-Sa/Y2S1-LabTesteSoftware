@@ -11,7 +11,15 @@ class DataStructures {
         final double PI = 3.14159;
         final double PHI = 1.612;
         System.out.println("PI = " + PI + " and PHI = " + PHI);
+    }
 
+    public static void Strings() {
+
+        String Feup = "Faculdade de Engenharia da Universidade do Porto";
+        
+    }
+
+    public static void Arrays() {
 
         System.out.println("Arrays and 2D arrays:");
         String[][] myName = {{"F", "á", "b", "i", "o"},
@@ -25,24 +33,5 @@ class DataStructures {
             }
             System.out.print(" ");
         }
-
-        System.out.println("\nArrayList:");
-        ArrayList<String> animals = new ArrayList<>();
-        animals.add("Cão");
-        animals.add("Gato");
-        animals.add("Peixe");
-        for (String animal : animals) {
-            System.out.println(animal);
-        }
-
-        System.out.println("\nClasses:");
-        Student me = new Student("Fabio", 19, 'M', 202007658, 10);
-        me.Presentation();
-        me.setAge(10);
-        me.setGrade(15.6);
-        me.setName("Fabio Sá");
-        me.Presentation();
-        System.out.println("Gender = " + me.getGender());
-
     }
 }
