@@ -76,7 +76,8 @@ class Student {
     }
 }
 
-class Vehicle {
+// Abstract class --> only child classes can be implemented
+abstract class Vehicle {
 
     private String name;
     private int year;
