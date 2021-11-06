@@ -3,17 +3,17 @@ import java.util.Scanner;                   // To scan user inputs
 
 class InputOutput {
 
-    public static void run () {
+    public static void run() {
         HelloWorld();
         Inputs();
         Calculator();
     }
 
-    public static void HelloWorld () {
+    public static void HelloWorld() {
         System.out.println("Hello World!");
     }
 
-    public static void Inputs () {
+    public static void Inputs() {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Your name: ");
@@ -59,10 +59,15 @@ class InputOutput {
                 input.nextLine();
 
                 if (operation != 5) {
-                    System.out.print("Operand 1: "); operand1 = input.nextInt(); input.nextLine();
-                    System.out.print("Operand 2: "); operand2 = input.nextInt();
+                    System.out.print("Operand 1: ");
+                    operand1 = input.nextInt();
+                    input.nextLine();
+                    System.out.print("Operand 2: ");
+                    operand2 = input.nextInt();
                 } else {
-                    System.out.print("Operand: "); operand1 = input.nextInt(); operand2 = 0;
+                    System.out.print("Operand: ");
+                    operand1 = input.nextInt();
+                    operand2 = 0;
                 }
                 input.nextLine();
 
@@ -103,76 +108,6 @@ class InputOutput {
             }
         }
         System.out.println("Good bye!");
-    }
-
-    public static void SomeDataStructures() {
-
-        final double PI = 3.14159;
-        System.out.println("Contants: " + PI);
-
-        System.out.println("Arrays and 2D arrays:");
-        String[][] myName = {   {"F", "á", "b", "i", "o"},
-                                {"A", "r", "a", "ú", "j", "o"},
-                                {"d", "e"},
-                                {"S", "á"}                          };
-
-        for (int i = 0 ; i < myName.length ; i++ ) {
-            for (int j = 0 ; j < myName[i].length ; j++ ) {
-                System.out.print(myName[i][j]);
-            }
-            System.out.print(" ");
-        }
-
-        System.out.println("\nArrayList:");
-        ArrayList<String> animals = new ArrayList<>();
-        animals.add("Cão");
-        animals.add("Gato");
-        animals.add("Peixe");
-        for (String animal : animals) { System.out.println(animal) ; }
-
-        System.out.println("\nClasses:");
-        Student me = new Student("Fabio", 19, 'M', 202007658, 10);
-        me.Presentation();
-        me.setAge(10); me.setGrade(15.6); me.setName("Fabio Sá");
-        me.Presentation();
-        System.out.println("Gender = " + me.getGender());
-
-    }
-
-    public static void Inheritance () {
-
-        Car myCar = new Car("my", 2018);
-        System.out.print(myCar.getWheels());
-
-    }
-
-    public static void UsingFiles () {
-
-        String name = "Lusiadas.txt";
-        File file = new File(name);
-        if (file.exists()) {
-            System.out.println("\n\nFile " + name + " exists");
-
-            // Extracts data and show content
-            try {
-                FileReader reader = new FileReader(name);
-                int data = reader.read();
-
-                System.out.println("\n" + name + ": \n");
-                while (data != -1) {
-                    System.out.print((char)data);
-                    data = reader.read();
-                }
-                reader.close();
-            } catch (FileNotFoundException exception) {
-                exception.printStackTrace();
-            } catch (IOException exception) {
-                exception.printStackTrace();
-            }
-
-        } else {
-            System.out.println("File not found");
-        }
     }
 }
 
