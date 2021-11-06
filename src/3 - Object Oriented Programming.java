@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 class OOP {
 
     public static void run() {
@@ -56,21 +54,18 @@ class Student {
         this.grade = grade;
     }
 
-    // all set methods
     public void setName(String name) { this.name = name; }
     public void setUp(int up) { this.up = up; }
     public void setAge(int age) { this.age = age; }
     public void setGender(char gender) { this.gender = gender; }
     public void setGrade(double grade) { this.grade = grade; }
 
-    // all get methods
     public String getName() { return name; }
     public int getUp() { return up; }
     public int getAge() { return age; }
     public char getGender() { return gender; }
     public double getGrade() { return grade; }
 
-    // other methods
     public void Presentation() {
         System.out.println(name + " have " + age + " years old, with upCode = " + up + " and grade " + grade + " values!");
     }
