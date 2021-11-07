@@ -1,3 +1,6 @@
+// Created on November, 2021
+// @author: Fábio Araújo de Sá
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
