@@ -1,5 +1,7 @@
+// Created on October, 2021
+// @author: Fábio Araújo de Sá
 
-import java.util.Scanner;                   // To scan user inputs
+import java.util.Scanner; // To scan user inputs
 
 class InputOutput {
 
