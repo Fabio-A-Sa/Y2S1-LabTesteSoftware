@@ -1,12 +1,22 @@
 // Created on October, 2021
 // @author: Fábio Araújo de Sá
 
+import java.util.ArrayList;
+import java.util.List;
+
 class DataStructures {
 
     public static void run() {
-        Constants();
-        Strings();
-        Arrays();
+
+        // Usual
+        //Constants();
+        //Strings();
+        //Arrays();
+
+        // Using Collections package
+        Lists();
+        //Sets();
+        //Maps();
     }
 
     public static void Constants() {
@@ -41,5 +51,21 @@ class DataStructures {
             System.out.print(" ");
         }
         System.out.println();
+    }
+
+    public static void Lists() {
+
+        List<String> names = new ArrayList<>();
+        String sentence = "Faculdade de Engenharia da Universidade do Porto";
+        for (String word : sentence.split(" ")) {
+            names.add(word);
+        }
+
+        names.remove("Engenharia");
+        names.remove(names.size()-1);
+
+        for (String word : names) {
+            System.out.print(word + " ");
+        }
     }
 }
