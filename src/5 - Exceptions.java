@@ -17,8 +17,9 @@ class playWithExceptions {
 
         } catch (MyException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("Stop");
         }
-
     }
 
     public static int simpleDivision(int x, int y) throws MyException {
