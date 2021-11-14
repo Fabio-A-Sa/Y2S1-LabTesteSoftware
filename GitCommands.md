@@ -72,6 +72,7 @@ $ git log -X --patch                                            # View modificat
 
 $ git status                                                    # To see a list with all files tracked and untracked
 $ git status -s                                                 # To see a summarized list with deleted and modified files
+$ git commit --amend                                            # To change last commit message
 ```
 
 ### 2.3 - Merge
