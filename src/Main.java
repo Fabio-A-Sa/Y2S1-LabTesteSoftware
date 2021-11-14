@@ -8,6 +8,6 @@ public class Main {
         //DataStructures.run();
         // OOP.run();
         //playWithExceptions.run();
-        usingTreads.run();
+        usingThreads.run();
     }
 }
