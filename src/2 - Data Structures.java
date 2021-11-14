@@ -14,7 +14,7 @@ class DataStructures {
         final double PI = 3.14159;
         final double PHI = 1.612;
         System.out.println("\nPI = " + PI + " and PHI = " + PHI + "\n");
-    }
+   66666 }
 
     public static void Strings() {
 
