@@ -20,6 +20,12 @@ class OOP {
         a.Presentation();
         String answer = a == b ? " is equal to " : " isn't equal to ";
         System.out.println(a.getName() + answer + b.getName() + '\n');
+
+        System.out.println("\n@Override functions:");
+        System.out.println(b.toString());
+        System.out.println(b.equals(a));
+        System.out.println(b.hashCode());
+        System.out.println();
     }
 
     public static void Heritance() {
@@ -85,11 +91,8 @@ class Student {
         if (getClass() != o.getClass()) return false;
 
         Student S = (Student) o;
-        return  this.gender == S.getGender() &&
-                this.up == S.getUp() &&
-                this.age == S.getAge() &&
-                this.name == S.getName() &&
-                this.grade == S.getGrade() ;
+        return  this.gender == S.getGender() && this.up == S.getUp() &&
+                this.age == S.getAge() && this.name == S.getName() && this.grade == S.getGrade() ;
     }
 
     @Override
@@ -100,6 +103,15 @@ class Student {
      */
     public int hashCode() {
         return Objects.hash(name, gender, up, age, grade);
+    }
+
+    @Override
+    /**
+     * Override da função toString(). Gera um apresentação dos atributos do objecto.
+     * Nota: convém reescrever esta função sempre que se cria uma nova classe, pelo menos para teste.
+     */
+    public String toString() {
+        return "Student (" + name + ", " + gender + ", " + up + ", " + age + ", " + grade + ")";
     }
 }
 
