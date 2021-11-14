@@ -76,7 +76,7 @@ class Student {
 
     @Override
     /**
-     * Override da função equals da STL. Compara dois objectos.
+     * Override da função equals(). Compara dois objectos.
      * Nota: convém reescrever esta função sempre que se cria uma nova classe (aula 11/11/2021, gravação em @00:06:31)
      */
     public boolean equals(Object o) {
@@ -93,6 +93,11 @@ class Student {
     }
 
     @Override
+    /**
+     * Override da função hashCode(). Gera um hash code com base nos atributos do objecto.
+     * Nota: convém reescrever esta função sempre que se cria uma nova classe, para que o hash seja gerado com base
+     * nos seus atributos e não na referência de memória.
+     */
     public int hashCode() {
         return Objects.hash(name, gender, up, age, grade);
     }
