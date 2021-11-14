@@ -7,6 +7,6 @@ public class Main {
         // InputOutput.run();
         // DataStructures.run();
         // OOP.run();
-        Exceptions.run();
+        playWithExceptions.run();
     }
 }
