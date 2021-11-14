@@ -1,8 +1,7 @@
 // Created on October, 2021
 // @author: Fábio Araújo de Sá
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class DataStructures {
 
@@ -14,8 +13,8 @@ class DataStructures {
         //Arrays();
 
         // Using Collections package
-        Lists();
-        //Sets();
+        //Lists();
+        Sets();
         //Maps();
     }
 
@@ -67,5 +66,59 @@ class DataStructures {
         for (String word : names) {
             System.out.print(word + " ");
         }
+
+        names.clear();
+    }
+
+    public static void Sets() {
+
+        Set<Point> numbers = new HashSet<Point>();
+        numbers.add(new Point(1, 2));
+        numbers.add(new Point(1, 2));
+        numbers.add(new Point(1, 2));
+        numbers.add(new Point(1, 2));
+        numbers.add(new Point(1, 2));
+        numbers.add(new Point(1, 2));
+
+        /**
+         * Prints 6 if hashCode() and equals() aren't implemented in class Point
+         */
+        System.out.println(numbers.size());
+
+        System.out.println(numbers.contains(new Point(1, 2))); // true
+        System.out.println(numbers.contains(new Point(2, 2))); // false
+    }
+}
+
+class Point {
+
+    private int x, y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+        if (getClass() != o.getClass()) return false;
+
+        Point S = (Point) o;
+        return  this.getX() == S.getX() && this.getY() == S.getY() ;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 }
