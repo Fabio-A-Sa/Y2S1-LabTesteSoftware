@@ -14,8 +14,8 @@ class DataStructures {
 
         // Using Collections package
         //Lists();
-        Sets();
-        //Maps();
+        //Sets();
+        Maps();
     }
 
     public static void Constants() {
@@ -87,6 +87,22 @@ class DataStructures {
 
         System.out.println(numbers.contains(new Point(1, 2))); // true
         System.out.println(numbers.contains(new Point(2, 2))); // false
+    }
+
+    public static void Maps() {
+
+        Map<String, Point> locations = new HashMap<String, Point>();
+
+        locations.put("A", new Point(1, 2));
+        locations.put("B", new Point(4, -5));
+        locations.put("C", new Point(0, 21));
+
+        locations.get("C");                                     // returns Point (0, 21)
+        locations.get("F");                                     // returns null
+        locations.remove("A");
+        System.out.println(locations.containsKey("D"));         // false
+        System.out.println(locations.containsKey("B"));         // true
+        System.out.println(locations.size());                   // 2
     }
 }
 
