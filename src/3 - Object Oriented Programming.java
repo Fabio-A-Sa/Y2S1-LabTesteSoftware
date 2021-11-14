@@ -71,6 +71,24 @@ class Student {
     public void Presentation() {
         System.out.println(name + " have " + age + " years old, with upCode = " + up + " and grade " + grade + " values!");
     }
+
+    @Override
+    /**
+     * Override da função equals da STL. Compara dois objectos.
+     * Nota: convém reescrever esta função sempre que se cria uma nova classe (aula 11/11/2021, gravação em @00:06:31)
+     */
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+        if (getClass() != o.getClass()) return false;
+
+        Student S = (Student) o;
+        return  this.gender == S.getGender() &&
+                this.up == S.getUp() &&
+                this.age == S.getAge() &&
+                this.name == S.getName() &&
+                this.grade == S.getGrade() ;
+    }
 }
 
 // Abstract class --> only child classes can be implemented
