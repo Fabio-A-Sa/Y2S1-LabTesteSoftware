@@ -22,7 +22,7 @@ class OOP {
         System.out.println(a.getName() + answer + b.getName() + '\n');
 
         System.out.println("\n@Override functions:");
-        System.out.println(b.toString());
+        System.out.println(b); // Or b.toString();
         System.out.println(b.equals(a));
         System.out.println(b.hashCode());
         System.out.println();
