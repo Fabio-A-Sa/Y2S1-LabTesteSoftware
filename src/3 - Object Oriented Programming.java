@@ -1,6 +1,8 @@
 // Created on November, 2021
 // @author: Fábio Araújo de Sá
 
+import java.util.Objects;
+
 class OOP {
 
     public static void run() {
@@ -88,6 +90,11 @@ class Student {
                 this.age == S.getAge() &&
                 this.name == S.getName() &&
                 this.grade == S.getGrade() ;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, gender, up, age, grade);
     }
 }
 
