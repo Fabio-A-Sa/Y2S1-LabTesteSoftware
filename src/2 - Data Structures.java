@@ -8,13 +8,13 @@ class DataStructures {
     public static void run() {
 
         // Usual
-        //Constants();
-        //Strings();
-        //Arrays();
+        Constants();
+        Strings();
+        Arrays();
 
         // Using Collections package
-        //Lists();
-        //Sets();
+        Lists();
+        Sets();
         Maps();
     }
 
