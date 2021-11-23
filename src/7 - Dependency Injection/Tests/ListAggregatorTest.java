@@ -2,6 +2,8 @@ package com.aor.numbers;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -71,10 +73,16 @@ public class ListAggregatorTest {
     @Test
     public void distinct_bug_8726() {
 
-        StubDeduplicator stub = new StubDeduplicator();
+        // Passo 5 -> StubDeduplicator stub = new StubDeduplicator();
+
+        GenericListDeduplicator deduplicator = Mockito.mock(GenericListDeduplicator.class);
+        // Passo 6 -> Se o deduplicate receber qualquer lista, retorna (1, 2, 4)
+        Mockito.when(deduplicator.deduplicate(Mockito.anyList(), Mockito.any(GenericListSorter.class)))
+                .thenReturn(Arrays.asList(1, 2, 4));
+
         ListAggregator aggregator = new ListAggregator();
         List<Integer> list = Arrays.asList(1, 2, 4, 2);
-        Integer result = aggregator.distinct(list, stub);
+        Integer result = aggregator.distinct(list, deduplicator); // o deduplicator injectado só retorna (1, 2, 4)
 
         Assertions.assertEquals(3, result);
     }
