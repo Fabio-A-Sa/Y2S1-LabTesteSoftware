@@ -14,5 +14,7 @@ public class DivisibleByFilterTest {
         Assert.assertEquals(true, divisibleByFilter.accept(3));
         Assert.assertEquals(false, divisibleByFilter.accept(0));
         Assert.assertEquals(true, divisibleByFilter.accept(2342));
+
+
     }
 }
