@@ -29,13 +29,16 @@ public class ListFilterTest {
     @Test
     public void usingStubs() {
 
-        ListFilter listFilter = Mockito.mock(ListFilter.class);
-        Mockito.when(listFilter.filter(Mockito.anyList()))
-                .thenReturn(Arrays.asList(0, 0, 1, 2));
+        PositiveFilter positiveFilter = Mockito.mock(PositiveFilter.class);
+        Mockito.when(positiveFilter.accept(Mockito.anyInt()))
+                .thenReturn(false);
 
-        List<Integer> numbers = Arrays.asList(-3, 2, 0, -5, 2, 6, -5, 0, 2, -2, -6, 0);
-        List<Integer> expected = Arrays.asList(0, 0, 1, 2);
-        List<Integer> result = listFilter.filter(numbers); // é independente do que colocar aqui
+        ListFilter listFilter = new ListFilter(positiveFilter);
+        List<Integer> numbers = Arrays.asList(3, 2, 0, 5, 2, 6, 5, 0, 2, 2, 6, 0);
+        List<Integer> expected = Arrays.asList();
+
+        // é independente do valor do filtro --> só está a analisar a função do listFilter()
+        List<Integer> result = listFilter.filter(numbers);
 
         Assertions.assertEquals(result, expected);
     }
