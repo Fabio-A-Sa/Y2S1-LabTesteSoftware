@@ -24,5 +24,16 @@ class FirstSpecification extends Specification {
             list.remove(0)
         then:
             list == [2, 3, 4]
+            // list == [1, 2, 4] --> error
+    }
+
+    def "Should get an index out of bounds when removing a nonexistent item" () {
+        given:
+            def list = [1, 2, 3, 4]
+        when:
+            list.remove(20)
+        then:
+            thrown(IndexOutOfBoundsException)
+            list.size() == 4
     }
 }
