@@ -1,3 +1,5 @@
+import spock.lang.Specification
+
 class FirstSpecification extends Specification {
 
     def "one plus one should equal to" () {
