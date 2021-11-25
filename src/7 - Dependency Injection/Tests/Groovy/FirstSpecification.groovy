@@ -1,3 +1,4 @@
+package com.aor.numbers;
 import spock.lang.Specification
 
 class FirstSpecification extends Specification {
@@ -45,5 +46,19 @@ class FirstSpecification extends Specification {
             1 | 2 | 1
             2 | 2 | 4
             3 | 2 | 9
+    }
+
+    def "Bug 8726 in Deduplicator" () {
+        given:
+            def deduplicator = Mock(GenericListDeduplicator)
+            def sorter = Mock(GenericListSorter)
+        when:
+            def result = deduplicator.deduplicate(Arrays.asList(1, 2, 4, 2), sorter)
+        then:
+            result == null
+    }
+
+    def "Using stubs with Spock" () {
+
     }
 }
