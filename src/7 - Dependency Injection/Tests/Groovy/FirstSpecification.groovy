@@ -1,5 +1,6 @@
 package com.aor.numbers;
 import spock.lang.Specification
+import sun.net.www.content.text.Generic
 
 class FirstSpecification extends Specification {
 
@@ -58,7 +59,18 @@ class FirstSpecification extends Specification {
             result == null
     }
 
-    def "Using stubs with Spock" () {
-
+    def "Using Stubs with Spock" () {
+        given:
+            def sorter = Mock(GenericListSorter)
+            def deduplicator = Mock(GenericListDeduplicator)
+            deduplicator.deduplicate(Arrays.asList(1, 2, 4, 2), sorter) >> Arrays.asList(1, 2, 4)
+            deduplicator.deduplicate(_) >> Arrays.asList(1, 2, 4)
+            deduplicator.deduplicate(_) >>> [Arrays.asList(1, 2, 4), Arrays.asList(6, 7)]
+        when:
+            def result = deduplicator.deduplicate(Arrays.asList(1, 2, 4, 2), sorter)
+        then:
+            result == Arrays.asList(1, 2, 4)
     }
+
+
 }
