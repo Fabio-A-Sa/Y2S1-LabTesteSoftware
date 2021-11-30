@@ -575,3 +575,12 @@ public class ListSorter implements GenericListSorter {
     }
 }
 
+public class Notifier {
+
+    String s;
+
+    public Notifier(String s) { this.s = s; }
+    void notify(String x) {};
+}
+
+
