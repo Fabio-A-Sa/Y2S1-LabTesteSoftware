@@ -1,5 +1,3 @@
-import jdk.dynalink.linker.LinkerServices;
-
 import java.util.List;
 
 public class StringTransformerGroup implements StringTransformer {
@@ -11,8 +9,8 @@ public class StringTransformerGroup implements StringTransformer {
     }
 
     public void execute (StringDrink drink) {
-
-        for (StringTransformer transformer : transformers) transformer.execute(drink);
+        for (StringTransformer transformer : transformers)
+            transformer.execute(drink);
     }
 
     public void undo (StringDrink drink) {
