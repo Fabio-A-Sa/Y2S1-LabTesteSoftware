@@ -12,11 +12,10 @@ public class ImpatientStrategy implements OrderingStrategy {
     }
 
     public void happyHourStarted(StringBar bar) {
-
+        System.out.println("Not applicable");
     }
 
     public void happyHourEnded(StringBar bar) {
-
+        System.out.println("Not applicable");
     }
-
 }
