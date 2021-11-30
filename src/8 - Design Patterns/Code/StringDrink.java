@@ -13,5 +13,4 @@ public class StringDrink {
     public void setText(String text) {
         this.text = text;
     }
-
 }
