@@ -442,3 +442,6 @@ public class DivisibleByFilter implements GenericListFilter {
     }
 }
 
+public interface GenericListDeduplicator {
+    public List<Integer> deduplicate(List<Integer> list, GenericListSorter genericListSorter);
+}
