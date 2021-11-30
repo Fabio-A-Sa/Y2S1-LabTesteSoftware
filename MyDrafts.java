@@ -415,8 +415,6 @@ class View {
     }
 }
 
-
-
 abstract class Fruta {
 
     String nome;
@@ -433,6 +431,14 @@ class Banana extends Fruta {
     public Banana (String nome, int tamanho, String qualidade) {
         super(nome, tamanho);
         this.qualidade = qualidade;
+    }
+}
+
+public class DivisibleByFilter implements GenericListFilter {
+
+    @Override
+    public boolean accept(Integer number) {
+        return number != 0 ;
     }
 }
 
