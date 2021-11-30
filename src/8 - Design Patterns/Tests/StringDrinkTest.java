@@ -273,4 +273,16 @@ public class StringDrinkTest {
         assertEquals("dCbX-DcBa", drink.getText());
     }
 
+    @Test
+    public void romulan() {
+
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = stringBar.getRecipe();
+        RomulanClient client = new RomulanClient();
+
+        // Recipe is ordered immediately
+        client.wants(drink, recipe, stringBar);
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
 }
