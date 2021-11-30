@@ -1171,4 +1171,18 @@ public class StringInverter implements StringTransformer {
     }
 }
 
+public class StringRecipe {
 
+    private List<StringTransformer> transformers;
+
+    public StringRecipe (List<StringTransformer> transformers) {
+        this.transformers = transformers;
+    }
+
+    public void mix(StringDrink drink) {
+
+        for (StringTransformer transformer : transformers) {
+            transformer.execute(drink);
+        }
+    }
+}
