@@ -1,6 +1,9 @@
 public class HumanClient implements Client {
 
     private OrderingStrategy strategy;
+    private StringDrink drink;
+    private StringRecipe recipe;
+    private StringBar bar;
 
     public HumanClient() {
         super();
@@ -12,11 +15,14 @@ public class HumanClient implements Client {
     }
 
     public void wants (StringDrink drink, StringRecipe recipe, StringBar bar) {
-        recipe.mix(drink);
+        strategy.wants(drink, recipe, bar);
+        this.recipe = recipe;
+        this.bar = bar;
+        this.drink = drink;
     }
 
     public void happyHourStarted(Bar bar) {
-        bar.startHappyHour();
+        this.recipe.mix(this.drink);
     }
 
     public void happyHourEnded(Bar bar) {
