@@ -935,3 +935,8 @@ public interface BarObserver {
     void happyHourStarted(Bar bar);
     void happyHourEnded(Bar bar);
 }
+
+public interface Client extends BarObserver {
+
+    void wants (StringDrink drink, StringRecipe recipe, StringBar bar);
+}
