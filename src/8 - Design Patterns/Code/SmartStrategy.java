@@ -20,7 +20,7 @@ public class SmartStrategy implements OrderingStrategy {
     }
 
     public void happyHourEnded(StringBar bar) {
-
+        System.out.println("Not applicable");
     }
 
 }
