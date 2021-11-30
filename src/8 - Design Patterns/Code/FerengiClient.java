@@ -25,5 +25,4 @@ public class FerengiClient extends AlienClient {
     public void wants(StringDrink drink, StringRecipe recipe, StringBar bar) {
         strategy.wants(drink, recipe, bar);
     }
-
 }
