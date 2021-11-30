@@ -1,16 +1,22 @@
 public class HumanClient implements Client {
 
+    private OrderingStrategy strategy;
+
     public HumanClient() {
         super();
     }
 
+    public HumanClient(OrderingStrategy strategy) {
+        super();
+        this.strategy = strategy;
+    }
+
     public void wants (StringDrink drink, StringRecipe recipe, StringBar bar) {
-        System.out.println("Test");
+        recipe.mix(drink);
     }
 
     public void happyHourStarted(Bar bar) {
         bar.startHappyHour();
-        notifyAll();
     }
 
     public void happyHourEnded(Bar bar) {

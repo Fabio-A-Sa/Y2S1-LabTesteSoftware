@@ -1,7 +1,19 @@
 public class ImpatientStrategy implements OrderingStrategy {
 
-    void wants(StringDrink drink, StringRecipe recipe, StringBar bar);
-    void happyHourStarted(StringBar bar);
+    private StringDrink drink;
+    private StringRecipe recipe;
+    private StringBar bar;
+    
+    public void wants(StringDrink drink, StringRecipe recipe, StringBar bar) {
+        this.drink = drink;
+        this.recipe = recipe;
+        this.bar = bar;
+        recipe.mix(drink);
+    }
+
+    public void happyHourStarted(StringBar bar) {
+
+    }
     void happyHourEnded(StringBar bar);
 
 }
