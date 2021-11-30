@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Bar {
@@ -7,7 +9,7 @@ public abstract class Bar {
 
     public Bar () {
         this.happyHour = false;
-        this.observers.clear();
+        observers = new ArrayList<>();
     }
 
     public boolean isHappyHour() {
