@@ -11,7 +11,11 @@ public class SmartStrategy implements OrderingStrategy {
         if (bar.isHappyHour()) recipe.mix(drink);
     }
 
-    void happyHourStarted(StringBar bar);
-    void happyHourEnded(StringBar bar);
+    public void happyHourStarted(StringBar bar) {
+
+    }
+    public void happyHourEnded(StringBar bar) {
+
+    }
 
 }
