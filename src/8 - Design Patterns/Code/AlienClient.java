@@ -20,6 +20,6 @@ public abstract class AlienClient implements Client {
     public void wants(StringDrink drink, StringRecipe recipe, StringBar bar) {
         strategy.wants(drink, recipe, bar);
     }
-    
+
     protected abstract OrderingStrategy createOrderingStrategy();
 }
