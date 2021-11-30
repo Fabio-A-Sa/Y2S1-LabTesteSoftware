@@ -9,7 +9,7 @@ public abstract class Bar {
 
     public Bar () {
         this.happyHour = false;
-        observers = new ArrayList<>();
+        this.observers = new ArrayList<>();
     }
 
     public boolean isHappyHour() {
@@ -18,13 +18,12 @@ public abstract class Bar {
 
     public void startHappyHour() {
         this.happyHour = true;
-        for (BarObserver observer : this.observers) {
-            observer.notify();
-        }
+        notifyObservers();
     }
 
     public void endHappyHour() {
         this.happyHour = false;
+        notifyObservers();
     }
 
     public void addObserver(BarObserver observer) {

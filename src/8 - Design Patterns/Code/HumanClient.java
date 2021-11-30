@@ -10,6 +10,7 @@ public class HumanClient implements Client {
 
     public void happyHourStarted(Bar bar) {
         bar.startHappyHour();
+        notifyAll();
     }
 
     public void happyHourEnded(Bar bar) {
