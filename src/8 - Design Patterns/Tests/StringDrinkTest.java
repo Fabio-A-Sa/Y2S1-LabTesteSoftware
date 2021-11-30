@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.quality.MockitoHint;
+
 public class StringDrinkTest {
 
     @Test
@@ -148,9 +152,18 @@ public class StringDrinkTest {
         Bar bar = new StringBar();
 
         HumanClient clientMock = Mockito.mock(HumanClient.class);
-
         bar.addObserver(clientMock);
 
-        Mockito.verid
+        Mockito.verify(clientMock, Mockito.never()).happyHourStarted(bar);
+        Mockito.verify(clientMock, Mockito.never()).happyHourEnded(bar);
+
+        bar.startHappyHour();
+        Mockito.verify(clientMock, Mockito.times(1)).happyHourStarted(bar);
+        Mockito.verify(clientMock, Mockito.never()).happyHourEnded(bar);
+
+        bar.endHappyHour();
+        Mockito.verify(clientMock, Mockito.times(1)).happyHourStarted(bar);
+        Mockito.verify(clientMock, Mockito.times(1)).happyHourEnded(bar);
+
     }
 }
