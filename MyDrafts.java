@@ -1223,3 +1223,9 @@ public class StringReplacer implements StringTransformer {
         drink.setText(newString);
     }
 }
+
+public interface StringTransformer {
+
+    void execute(StringDrink drink);
+    void undo(StringDrink drink);
+}
