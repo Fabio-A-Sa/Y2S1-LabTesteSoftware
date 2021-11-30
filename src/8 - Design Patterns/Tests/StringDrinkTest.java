@@ -256,5 +256,21 @@ public class StringDrinkTest {
         assertEquals("dCbX-DcBa", drink.getText());
     }
 
-    
+    @Test
+    public void ferengiStartClosed() {
+
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = stringBar.getRecipe();
+        FerengiClient client = new FerengiClient();
+        stringBar.addObserver(client); // this is important!
+
+        client.wants(drink, recipe, stringBar);
+        assertEquals("AbCd-aBcD", drink.getText());
+
+        // Recipe is only ordered here
+        stringBar.startHappyHour();
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
 }
