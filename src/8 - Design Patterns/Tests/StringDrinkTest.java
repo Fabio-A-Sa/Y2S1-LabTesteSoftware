@@ -191,4 +191,19 @@ public class StringDrinkTest {
         stringBar.order(drink, recipe);
         assertEquals("dCbX-DcBa", drink.getText());
     }
+
+    @Test
+    public void impatientStrategy() {
+
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = stringBar.getRecipe();
+
+        ImpatientStrategy strategy = new ImpatientStrategy();
+        HumanClient client = new HumanClient(strategy);
+
+        // Recipe is ordered immediately
+        client.wants(drink, recipe, stringBar);
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
 }
