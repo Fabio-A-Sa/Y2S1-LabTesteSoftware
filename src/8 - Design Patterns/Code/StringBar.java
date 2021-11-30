@@ -7,7 +7,7 @@ public class StringBar extends Bar {
         super();
     }
 
-    private StringRecipe gerRecipe() {
+    public StringRecipe getRecipe() {
 
         StringInverter si = new StringInverter();
         StringCaseChanger cc = new StringCaseChanger();
@@ -20,6 +20,10 @@ public class StringBar extends Bar {
 
         StringRecipe recipe = new StringRecipe(transformers);
         return recipe;
+    }
+
+    public void order (StringDrink drink,  StringRecipe recipe) {
+        recipe.mix(drink);
     }
 
 }
