@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.quality.MockitoHint;
@@ -164,6 +163,21 @@ public class StringDrinkTest {
         bar.endHappyHour();
         Mockito.verify(clientMock, Mockito.times(1)).happyHourStarted(bar);
         Mockito.verify(clientMock, Mockito.times(1)).happyHourEnded(bar);
+    }
 
+    @Test
+    public void removeObservers() {
+
+        Bar bar = new StringBar();
+
+        HumanClient clientMock = Mockito.mock(HumanClient.class);
+        bar.addObserver(clientMock);
+        bar.removeObserver(clientMock);
+
+        bar.startHappyHour();
+        bar.endHappyHour();
+
+        Mockito.verify(clientMock, Mockito.never()).happyHourStarted(bar);
+        Mockito.verify(clientMock, Mockito.never()).happyHourEnded(bar);
     }
 }
