@@ -180,4 +180,15 @@ public class StringDrinkTest {
         Mockito.verify(clientMock, Mockito.never()).happyHourStarted(bar);
         Mockito.verify(clientMock, Mockito.never()).happyHourEnded(bar);
     }
+
+    @Test
+    public void orderStringRecipe() {
+
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = stringBar.getRecipe();
+
+        stringBar.order(drink, recipe);
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
 }
