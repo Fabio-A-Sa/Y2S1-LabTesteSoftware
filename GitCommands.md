@@ -121,9 +121,9 @@ $ git revert commitID                                            # To revert cha
 ### 2.7 - [Gitignore](https://git-scm.com/docs/gitignore)
 
 ```bash
-folderName/                                                       # Don't commit this folder
-fileName.extension                                                # Don't commit this file
-!name/**/*.txt                                                    # Don't ignore any .txt files inside directory name
+folderName/                                                       # Don'9 - Refactoring commit this folder
+fileName.extension                                                # Don'9 - Refactoring commit this file
+!name/**/*.txt                                                    # Don'9 - Refactoring ignore any .txt files inside directory name
 ```
 
 
