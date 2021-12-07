@@ -1758,3 +1758,29 @@ public class SimpleOrder {
         return discount == null ? price : discount.applyDiscount(price);
     }
 }
+
+public class Client extends Person {
+
+    public Client(String name, String phone) {
+        super(name, phone);
+    }
+}
+
+public class Person {
+
+    private final String name;
+    private final String phone;
+
+    public Person (String name, String phone) {
+        this.name = name;
+        this.phone = phone;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+}
