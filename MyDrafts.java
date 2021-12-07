@@ -1723,3 +1723,20 @@ public class FixedDiscount implements GenericDiscount {
         return fixed > price ? 0 : price - fixed;
     }
 }
+
+public interface GenericDiscount {
+    double applyDiscount(double price);
+}
+
+public class PercentageDiscount implements GenericDiscount {
+
+    private double percentage;
+
+    public PercentageDiscount(double percentage) {
+        this.percentage = percentage;
+    }
+
+    public double applyDiscount(double price) {
+        return price * (1 - percentage);
+    }
+}
