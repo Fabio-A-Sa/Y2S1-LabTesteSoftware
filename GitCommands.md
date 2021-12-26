@@ -117,6 +117,7 @@ $ git reset HEAD fileName                                       # To revert a si
 $ git reset                                                     # To revert all changes with add and without commit
 
 $ git reset --hard commitID                                     # To revert changes with commit and without push
+$ git reset --hard HEAD^ || git reset --hard HEAD~1             # To revert changes with commit and without push. Jump steps.
 
 $ git revert commitID                                           # To revert changes with commit and push. Bad practise.
 ```
