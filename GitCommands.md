@@ -71,8 +71,7 @@ $ git log -X --oneline                                          # View previous 
 $ git log -X --patch                                            # View modifications
 
 $ git status                                                    # To see a list with all files tracked and untracked
-$ git status -s                                                 # To see a summarized list with deleted and modified files
-$ git status --short                                            # To see a summarized list with deleted and modified files
+$ git status -s || git status --short                           # To see a summarized list with deleted and modified files
 $ git commit --amend                                            # To change last commit message using VIM for default
 ```
 
