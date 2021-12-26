@@ -1,7 +1,18 @@
-# Git Commands
+# Git
 
 "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems). <br>
 Git was created by Linus Torvalds in 2005 for development of the Linux kernel." - *in Wikipédia*. <br>
+
+### Algumas notas iniciais
+
+Não existe um servidor central, todos os desenvolvedores e clientes têm acesso ao histórico todo e de todos os objectos, usando ``git clone`` por exemplo. <br>
+Cria um snapshot e uma checksum em cada commit. A checksum, ``SHA-256``, identifica qualquer objecto criado, qualquer autor, commit ou versão dentro. <br>
+
+### Git areas
+
+
+
+# Git Commands
 
 ## 1 - Directories and files management: <br>
 
