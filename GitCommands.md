@@ -98,11 +98,11 @@ $ git push origin --delete branchName                           # To delete a ce
 ### 2.5 - Remote
 
 ```bash
-$ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub
+$ git clone remoteRepositoryLink                                # To download a remote repository, using GitHub HTTPS
 $ git push origin branch_name                                   # To upload modifications at branch_name in remote repository
 $ git fetch                                                     # To download latest modifications in remote repository
 $ git pull                                                      # To download latest modifications in remote repository and merge
-$ git remote add origin git@github.com:remoteRepositoryLink     # Using a GitHub repository as reference
+$ git remote add origin git@github.com:remoteRepositoryLink     # Using a GitHub repository as reference, by SSH
 $ git checkout --track origin/newBranch                         # To create a new branch which can be viewed in remote or local
 $ git remote -v                                                 # To view all add remote repository             
 ```
@@ -111,11 +111,14 @@ $ git remote -v                                                 # To view all ad
 
 ```bash
 $ git checkout -- fileName                                      # To revert changes in a single file (not in stage)
-$ git checkout --hard                                           # To reset non-saved modifications in all files (not in stage)
+$ git reset --hard                                              # To reset non-saved modifications in all files (not in stage)
+
 $ git reset HEAD fileName                                       # To revert a single file with add and without commit
 $ git reset                                                     # To revert all changes with add and without commit
+
 $ git reset --hard commitID                                     # To revert changes with commit and without push
-$ git revert commitID                                            # To revert changes with commit and push. Bad practise.
+
+$ git revert commitID                                           # To revert changes with commit and push. Bad practise.
 ```
 
 ### 2.7 - [Gitignore](https://git-scm.com/docs/gitignore)
