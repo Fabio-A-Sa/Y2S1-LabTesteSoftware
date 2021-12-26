@@ -89,7 +89,7 @@ $ git branch                                                    # To view all of
 
 $ git branch newBranchName                                      # To create a new branch
 $ git checkout newBranchName                                    # To modify the console to the new branch path
-$ git checkout -b newBranchName                                 # Create and modify
+$ git checkout -b newBranchName                                 # Create and modify to new brach
 
 $ git branch -d branchName                                      # To delete a certain branch locally
 $ git push origin --delete branchName                           # To delete a certain branch remotely
