@@ -1,6 +1,6 @@
 # Laboratório de Desenho e Teste de Software (LDTS  ) - Year 2, Semester 1 (Y2S1)
 
-This repository contains all the exercises and assessments of the UC Algorithms and Data Structures, taught by [Rui Maranhão](https://sigarra.up.pt/feup/pt/func_geral.formview?p_codigo=466651) at [Integrated Master in Informatics and Computing Engineering](https://sigarra.up.pt/feup/pt/cur_geral.cur_view?pv_curso_id=742) [MIEIC] at the [Faculty of Engineering of the University of Porto](https://sigarra.up.pt/feup/pt/web_page.Inicial) [FEUP]. <br/>
+This repository contains all the exercises and assessments of the UC l, taught by [Rui Maranhão](https://sigarra.up.pt/feup/pt/func_geral.formview?p_codigo=466651) at [Integrated Master in Informatics and Computing Engineering](https://sigarra.up.pt/feup/pt/cur_geral.cur_view?pv_curso_id=742) [MIEIC] at the [Faculty of Engineering of the University of Porto](https://sigarra.up.pt/feup/pt/web_page.Inicial) [FEUP]. <br/>
 
 <br/>
 <p align = "center" >

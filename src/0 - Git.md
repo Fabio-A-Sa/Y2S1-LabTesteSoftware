@@ -5,9 +5,9 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
 
 ### Git areas
 
-- [x] Working directory - work in current directory files
-- [x] Staging area - using `git add .` all files are in this zone
-- [x] Git directory - using `git commit -m "A message"` all files are in this zone and in `.git` directory. To see all contents in `.git` directory, use `$ ls -la` command in bash Terminal.
+- [x] Working directory - work in current directory files ;
+- [x] Staging area - using `git add .` all files are in this zone ;
+- [x] Git directory - using `git commit -m "A message"` all files are in this zone and in `.git` directory. To see all contents in `.git` directory, use `$ ls -la` command in bash Terminal ;
 
 <br/>
 <p align = "center" >
@@ -20,9 +20,10 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
 
 ### File states
 
-- [x] Untracked - Files that are not in current directory `.git`
-- [x] Unmodified - Files that are not current modified
-- [x] 
+- [x] Untracked - Files that are not in current `.git` directory ;
+- [x] Unmodified - Files that are not current modified ;
+- [x] Modified - Modified, but the changes haven't been saved yet ;
+- [x] Staged, after `git add fileName` command ;
 
 <br/>
 <p align = "center" >
@@ -32,8 +33,10 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
        alt = "André Restivo filesStates" 
     />
 </p>
+<br>
+<br>
 
-# Git Commands
+# Commands
 
 ## 1 - Directories and files management: <br>
 
@@ -77,6 +80,8 @@ $ pwd                                                           # To view a curr
 $ ls                                                            # To view all files in current folder
 $ ls -la                                                        # To view all files in current folder, including all hidden files
 ```   
+
+<br>
 
 ## 2 - Git
 
