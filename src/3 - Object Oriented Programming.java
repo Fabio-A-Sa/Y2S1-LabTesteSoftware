@@ -5,8 +5,9 @@
  * Nesta secção:
  * - Significado das keywords
  * - Operadores ternários
- * - Overriding
- * - Abstract classes e métodos
+ * - Abstract class
+ * - Compilação
+ * - Overridings e métodos
  * - Overloads:
  *      -
  *      -
@@ -15,16 +16,16 @@
  */
 
 /**
- * Interface: conjunto de métodos que determinados objectos podem implementar
- * public: pode ser acedida em qualquer parte do código, desde que haja o correspondente import
- * protected: pode ser acedida apenas no próprio pacote onde está definida
- * package: pode ser acedida apenas no próprio pacote (apenas para métodos e variáveis)
- * private: apenas a própria classe pode aceder a esses atributos ou métodos
- * static:  variável ou método que é criado apenas uma vez, criado na classe e não num objecto.
- *          Logo pode ser acedida e usada sem necessiade de instanciar um objecto dessa classe
- *          desde que seja público
- * final:   declara uma constante. Num tipo primitivo, não podemos alterar o valor. Num objecto,
- *          não podemos alterar a referência do objecto mas podemos alterar o estado dele
+ * Interface:  conjunto de métodos que determinados objectos podem implementar
+ * public:     pode ser acedida em qualquer parte do código, desde que haja o correspondente import
+ * protected:  pode ser acedida apenas no próprio pacote onde está definida
+ * package:    pode ser acedida apenas no próprio pacote (apenas para métodos e variáveis)
+ * private:    apenas a própria classe pode aceder a esses atributos ou métodos
+ * static:     variável ou método que é criado apenas uma vez, criado na classe e não num objecto.
+ *             Logo pode ser acedida e usada sem necessiade de instanciar um objecto dessa classe
+ *             desde que seja público
+ * final:      declara uma constante. Num tipo primitivo, não podemos alterar o valor. Num objecto,
+ *             não podemos alterar a referência do objecto mas podemos alterar o estado dele
  */
 
 /**
@@ -39,6 +40,11 @@
  * A classe que deriva dela tem de implementar todos os seus métodos
  * Abstract methods
  * A classe que deriva este método tem que obrigatoriamente implementar
+ */
+
+/**
+ * Compilação
+ * 
  */
 
 import java.util.Objects;
