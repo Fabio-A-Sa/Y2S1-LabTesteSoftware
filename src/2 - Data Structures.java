@@ -1,6 +1,15 @@
 // Created on October, 2021
 // @author: Fábio Araújo de Sá
 
+/**
+ * Nesta secção:
+ * - Diferença entre tipos primitivos e objectos
+ * - Passagem por valor e passagem por referência
+ * - Constantes, strings, arrays
+ * - Listas, sets e maps
+ *
+ */
+
 import java.util.*;
 
 class DataStructures {

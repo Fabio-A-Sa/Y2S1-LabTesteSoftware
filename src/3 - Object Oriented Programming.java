@@ -3,8 +3,13 @@
 
 /**
  * Nesta secção:
- * - Diferença entre primitivos e objectos
- * - Diferença entre
+ * - Significado das keywords
+ * - Operadores ternários
+ * - Overloads:
+ *      -
+ *      -
+ *      -
+ *      -
  */
 
 /**
