@@ -44,7 +44,9 @@
 
 /**
  * Compilação
- * 
+ * No Java, usa-se o Graddle, que é um compilador que se ajusta a várias versões e vãrios pacotes
+ * no projecto. O Graddle permite fazer build, executar testes, deploy, download de bibliotecas
+ * de forma automática
  */
 
 import java.util.Objects;
