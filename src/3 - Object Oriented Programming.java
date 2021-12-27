@@ -1,6 +1,25 @@
 // Created on November, 2021
 // @author: Fábio Araújo de Sá
 
+/**
+ * Nesta secção:
+ * - Diferença entre primitivos e objectos
+ * - Diferença entre
+ */
+
+/**
+ * Interface: conjunto de métodos que determinados objectos podem implementar
+ * public: pode ser acedida em qualquer parte do código, desde que haja o correspondente import
+ * protected: pode ser acedida apenas no próprio pacote onde está definida
+ * package: pode ser acedida apenas no próprio pacote (apenas para métodos e variáveis)
+ * private: apenas a própria classe pode aceder a esses atributos ou métodos
+ * static:  variável ou método que é criado apenas uma vez, criado na classe e não num objecto.
+ *          Logo pode ser acedida e usada sem necessiade de instanciar um objecto dessa classe
+ *          desde que seja público
+ * final:   declara uma constante. Num tipo primitivo, não podemos alterar o valor. Num objecto,
+ *          não podemos alterar a referência do objecto mas podemos alterar o estado dele
+ */
+
 import java.util.Objects;
 
 class OOP {
@@ -41,7 +60,7 @@ class OOP {
     }
 }
 
-class Student {
+class Student implements Cloneable {
 
     private String name;
     private char gender;
@@ -78,6 +97,15 @@ class Student {
 
     public void Presentation() {
         System.out.println(name + " have " + age + " years old, with upCode = " + up + " and grade " + grade + " values!");
+    }
+
+    @Override
+    /**
+     * Override da função clone(). Retorna um novo objecto, numa nova referência
+     * com os mesmos atributos.
+     */
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     @Override
