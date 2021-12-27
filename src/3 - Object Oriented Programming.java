@@ -9,10 +9,10 @@
  * - Compilação
  * - Overridings e métodos
  * - Overloads:
- *      -
- *      -
- *      -
- *      -
+ *      - Equals - para comparar objectos, sem ser por referência mas sim pelos seus atributos
+ *      - toString - para colocar em string um conjunto de atributos do objecto
+ *      - clone - para clonar um objecto com base nos atributos de outro e não apenas copiar a referência
+ *      - hashCode - 
  */
 
 /**
