@@ -44,10 +44,10 @@ class DataStructures {
     public static void Arrays() {
 
         System.out.println("Arrays and 2D arrays:");
-        String[][] myName = {{"F", "á", "b", "i", "o"},
-                {"A", "r", "a", "ú", "j", "o"},
-                {"d", "e"},
-                {"S", "á"}};
+        String[][] myName = {   {"F", "á", "b", "i", "o"},
+                                {"A", "r", "a", "ú", "j", "o"},
+                                {"d", "e"},
+                                {"S", "á"}                          };
 
         for (int i = 0; i < myName.length; i++) {
             for (int j = 0; j < myName[i].length; j++) {
