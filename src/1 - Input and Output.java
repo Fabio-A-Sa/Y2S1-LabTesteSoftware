@@ -1,6 +1,10 @@
 // Created on October, 2021
 // @author: Fábio Araújo de Sá
 
+// JVM - Java Virtual Machine, compreende linguagem bytecode (.class) gerada através de ficheiros .java
+// JDK - Java Development Kit, para compilação e execução de scripts, em cada sistema operativo
+// JRE - Java Runtime Environment, só para executar o script
+
 import java.util.Scanner; // To scan user inputs
 
 class InputOutput {
