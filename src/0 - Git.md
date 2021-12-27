@@ -21,14 +21,15 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel." 
 ### File states
 
 - [x] Untracked - Files that are not in current directory `.git`
-- [x] Unmodified - Files that 
+- [x] Unmodified - Files that are not current modified
+- [x] 
 
 <br/>
 <p align = "center" >
   <img 
-       title = "ARestivo files"
+       title = "André Restivo filesStates"
        src = "../Images/fileStages.png" 
-       alt = "ARestivo files" 
+       alt = "André Restivo filesStates" 
     />
 </p>
 
