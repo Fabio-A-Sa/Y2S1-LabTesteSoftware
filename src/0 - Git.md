@@ -10,7 +10,25 @@ Cria um snapshot e uma checksum em cada commit. A checksum, ``SHA-256``, identif
 
 ### Git areas
 
+<br/>
+<p align = "center" >
+  <img 
+       title = "ARestivo gitStates"
+       src = "../Images/gitStages.png" 
+       alt = "ARestivo gitStates" 
+    />
+</p>
 
+### File states
+
+<br/>
+<p align = "center" >
+  <img 
+       title = "ARestivo files"
+       src = "../Images/fileStages.png" 
+       alt = "ARestivo files" 
+    />
+</p>
 
 # Git Commands
 
