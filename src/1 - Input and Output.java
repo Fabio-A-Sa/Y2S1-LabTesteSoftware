@@ -1,9 +1,18 @@
 // Created on October, 2021
 // @author: Fábio Araújo de Sá
 
-// JVM - Java Virtual Machine, compreende linguagem bytecode (.class) gerada através de ficheiros .java
-// JDK - Java Development Kit, para compilação e execução de scripts, em cada sistema operativo
-// JRE - Java Runtime Environment, só para executar o script
+/**
+ * JVM - Java Virtual Machine, compreende linguagem bytecode (.class) gerada através de ficheiros .java
+ * JDK - Java Development Kit, para compilação e execução de scripts, em cada sistema operativo
+ * JRE - Java Runtime Environment, só para executar o script
+ */
+
+/**
+ * Interface: conjunto de métodos que determinados objectos podem implementar
+ * public: pode ser acedida em qualquer parte do código, desde que haja o correspondente import
+ * protected: pode ser acedida apenas no próprio pacote onde está definida
+ * private: apenas a própria classe pode aceder a esses atributos ou métodos
+ */
 
 import java.util.Scanner; // To scan user inputs
 
