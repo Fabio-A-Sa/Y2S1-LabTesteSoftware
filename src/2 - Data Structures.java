@@ -5,6 +5,12 @@ import java.util.*;
 
 class DataStructures {
 
+    /**
+     * Nota:
+     * os tipos primitivos são guardados como valor na memória
+     * os objectos são guardados como referência na memória
+     */
+
     public static void run() {
 
         // Usual
