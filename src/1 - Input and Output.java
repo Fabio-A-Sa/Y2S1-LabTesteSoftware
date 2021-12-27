@@ -11,7 +11,10 @@
  * Interface: conjunto de métodos que determinados objectos podem implementar
  * public: pode ser acedida em qualquer parte do código, desde que haja o correspondente import
  * protected: pode ser acedida apenas no próprio pacote onde está definida
+ * package: pode ser acedida apenas no próprio pacote (apenas para métodos e variáveis)
  * private: apenas a própria classe pode aceder a esses atributos ou métodos
+ * static:  variável ou método que é criado apenas uma vez, criado na classe e não num objecto.
+ *          Logo pode ser acedida e usada sem necessiade de instanciar um objecto dessa classe
  */
 
 import java.util.Scanner; // To scan user inputs
