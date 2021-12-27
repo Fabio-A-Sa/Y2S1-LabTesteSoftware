@@ -5,7 +5,7 @@
  * Nesta secção:
  * - Diferença entre JVM, JDK e JRE
  * - Exemplos de input e validação de input
- * - Exemplos de flows
+ * - Exemplos de flows, if, else, do, while, for, switch
  */
 
 /**

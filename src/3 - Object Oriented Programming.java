@@ -5,6 +5,8 @@
  * Nesta secção:
  * - Significado das keywords
  * - Operadores ternários
+ * - Overriding
+ * - Abstract classes e métodos
  * - Overloads:
  *      -
  *      -
@@ -23,6 +25,20 @@
  *          desde que seja público
  * final:   declara uma constante. Num tipo primitivo, não podemos alterar o valor. Num objecto,
  *          não podemos alterar a referência do objecto mas podemos alterar o estado dele
+ */
+
+/**
+ * Overriding:
+ * Capacidade de reescrever o método herdado de uma classe (super())
+ * O método pode ser sempre reescrito e reestruturado desde que não seja declarado,
+ * na classe primária, com a keyword "final"
+ */
+
+/**
+ * Abstract classes
+ * A classe que deriva dela tem de implementar todos os seus métodos
+ * Abstract methods
+ * A classe que deriva este método tem que obrigatoriamente implementar
  */
 
 import java.util.Objects;
