@@ -7,7 +7,6 @@
  * - Passagem por valor e passagem por referência
  * - Constantes, strings, arrays
  * - Listas, sets e maps
- *
  */
 
 import java.util.*;

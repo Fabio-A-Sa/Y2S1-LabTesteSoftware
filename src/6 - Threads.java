@@ -1,6 +1,12 @@
 // Created on November, 2021
 // @author: Fábio Araújo de Sá
 
+/**
+ * Treads:
+ * Execução de código em paralelo, através de diferentes processos. Têm a sua própria stack mas
+ * têm acesso a todos os dados partilhados
+ */
+
 class usingThreads {
 
     public static void run() {
@@ -39,8 +45,6 @@ class View {
         System.out.println(m.a + " " + m.b);
     }
 }
-
-
 
 abstract class Fruta {
 
