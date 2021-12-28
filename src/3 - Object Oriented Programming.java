@@ -10,9 +10,10 @@
  * - Overridings e métodos
  * - Overloads:
  *      - Equals - para comparar objectos, sem ser por referência mas sim pelos seus atributos
- *      - toString - para colocar em string um conjunto de atributos do objecto
+ *      - toString - para colocar em string um conjunto de atributos do objecto, uma representação legível para o utilizador
  *      - clone - para clonar um objecto com base nos atributos de outro e não apenas copiar a referência
- *      - hashCode - 
+ *      - hashCode - para o hash do objecto ser com base nos seus atributos e não pela referência
+ * - Packages
  */
 
 /**
@@ -47,6 +48,13 @@
  * No Java, usa-se o Graddle, que é um compilador que se ajusta a várias versões e vãrios pacotes
  * no projecto. O Graddle permite fazer build, executar testes, deploy, download de bibliotecas
  * de forma automática
+ */
+
+/**
+ * Packages
+ * Organização do código por diretórios
+ * O Import tem de ser com base no nome das sucessivas pastas e o nome da classe.
+ * Se quiser importar todas as classes do pacote, usar *, mas é considerado má prática
  */
 
 import java.util.Objects;
