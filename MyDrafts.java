@@ -2656,3 +2656,21 @@ public class WorkerTest {
     }
 }
 
+abstract class Fruta {
+
+    String nome;
+    int tamanho;
+    public Fruta (String nome, int tamanho) {
+        this.nome = nome;
+        this.tamanho = tamanho;
+    }
+}
+
+class Banana extends Fruta {
+
+    String qualidade;
+    public Banana (String nome, int tamanho, String qualidade) {
+        super(nome, tamanho);
+        this.qualidade = qualidade;
+    }
+}
