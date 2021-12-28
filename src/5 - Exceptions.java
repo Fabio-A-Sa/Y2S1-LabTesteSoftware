@@ -1,6 +1,12 @@
 // Created on November, 2021
 // @author: Fábio Araújo de Sá
 
+/**
+ * Nesta secção:
+ * - Como lidar com excepções
+ * - Como construir novas excepções
+ */
+
 class playWithExceptions {
 
     public static void run() {
@@ -15,11 +21,12 @@ class playWithExceptions {
 
         } catch (MyException e) {
             e.printStackTrace();
-        } finally {
+        } finally { // bloco que é sempre executado
             System.out.println("Stop");
         }
     }
 
+    // Este método pode potencialmente lançar a seguinte excepção
     public static int simpleDivision(int x, int y) throws MyException {
 
         if (y != 0) {
