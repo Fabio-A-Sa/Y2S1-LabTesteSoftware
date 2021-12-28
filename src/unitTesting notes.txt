@@ -6,7 +6,12 @@ unit testing -> o que vamos focar nesta cadeira
 test doubles -> objectos que ajudam a minimizar a complexidade dos testes e de certa forma ajudar
                 a que os testes sejam independentes do resto do sistema. São exemplos:
 
+stubs - providencia respostas pré-programadas. Se a função receber x deverá retornar Y,
+        independentemente do resto do sistema
 
-                
+mocks - espectativas quanto à programação. Usam-se diferentes frameworks, para esta cadeira apenas dois:
+        - Mockito, em Java
+        - Spock, em Groovy
+
 Aula 5, gravação (ver hoje de tarde)
 ...
