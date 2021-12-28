@@ -1,0 +1,12 @@
+Vou colocar as notas aqui provisoriamente, depois decido se faço um markdown para esta parte da matéria
+
+Aula 4, gravação às @01:17:00 horas
+
+unit testing -> o que vamos focar nesta cadeira
+test doubles -> objectos que ajudam a minimizar a complexidade dos testes e de certa forma ajudar
+                a que os testes sejam independentes do resto do sistema. São exemplos:
+
+
+                
+Aula 5, gravação (ver hoje de tarde)
+...
