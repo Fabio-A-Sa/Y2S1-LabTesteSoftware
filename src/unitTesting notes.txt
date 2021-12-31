@@ -36,5 +36,15 @@ setup()
 test()
 cleanUp()
 
+Bugs and debugging
 
+Human Error - an human action which produces software faults / defeitos
+Faults - omissão de software por erro humano
+Error - estado não esperado do sistema que eventualmente pode levar a uma falha
+Failture - uma falha observada
 
+Bugs ou features?
+Perceber as necessidades do cliente pode não estar alinhado com a especificação dada.
+Diferentes interpretações (a linguagem natural é ambígua), pode ser bug para um e feature para outro.
+Leva a problemas de interpretação e de software
+Constante comunicação com o cliente, para especificações precisas
