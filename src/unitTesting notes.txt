@@ -14,4 +14,16 @@ mocks - espectativas quanto à programação. Usam-se diferentes frameworks, par
         - Spock, em Groovy
 
 Aula 5, gravação (ver hoje de tarde)
-...
+
+Testar o sistema (antigamente):
+- testar o código sob o ponto de vista do utilizador;
+- escrever código que vai exercitar o código que queremos testar, e colocar esse código na main;
+Desvantagens deste método antigo:
+- difícil de gerir o sistema
+- não dá para fazer um roleback do sistema "estragado" pela manipulação dos testes
+- muito manual, quase sem automatização
+
+Atualmente:
+Usar Spock and JUnit -> permite que o developer se foque apenas no teste
+
+
