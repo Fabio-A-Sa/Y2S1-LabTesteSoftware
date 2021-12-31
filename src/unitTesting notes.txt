@@ -26,4 +26,15 @@ Desvantagens deste método antigo:
 Atualmente:
 Usar Spock and JUnit -> permite que o developer se foque apenas no teste
 
+No JUnit
+setup (@Before)
+run (@Test)
+clean up (@After)
+
+No Spock
+setup()
+test()
+cleanUp()
+
+
 
