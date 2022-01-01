@@ -48,3 +48,8 @@ Perceber as necessidades do cliente pode não estar alinhado com a especificaç�
 Diferentes interpretações (a linguagem natural é ambígua), pode ser bug para um e feature para outro.
 Leva a problemas de interpretação e de software
 Constante comunicação com o cliente, para especificações precisas
+
+Detalhe para o projecto, 29:45 da aula 5
+
+Uso de testes - para verificar o comportamento do sistema em runtime
+Uso de revisões e inspeções - para algo que não é executável, porque os humanos são bons a ler descrições
