@@ -133,3 +133,15 @@ Evitar repetições de código e problemas caso esse mesmo código tenha que sof
 Assim o código é modificado só num sítio e perpetuado por todo o projecto sem demais problemas
 
 
+Aula 8 (09/12/2021)
+
+Refactoring
+Permite melhorar o desenho e estrutura do software, sem modificar o seu comportamento,
+para que exista uma melhor compreensão do que faz e como faz.
+Sempre que se faz uma refatorização, convém voltar a correr os testes para que não exista
+problemas de quebra de determinados parâmetros.
+
+Code Smells
+Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
+refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
+
