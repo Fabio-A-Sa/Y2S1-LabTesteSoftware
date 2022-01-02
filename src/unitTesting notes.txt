@@ -256,5 +256,45 @@ Remove middle man
 Introduce foreign method
 Introduce local extension
 
-3 - Organizing Data
+3 - Simplifying Conditional Expressions
+
+Decompose conditional
+Consolidate conditional expression
+Remove control flag
+Replace nested conditionals
+Introduce null objects
+Introduce assertions
+
+4 - Symplifying method calls
+
+5 - Dealing with generalizations
+
+Pull up field
+Pull up method
+Pull up constructor body
+Push down field
+Push down method
+Extract subclasses
+Extract superclasses
+Extract interfaces
+Colapse hierarchy
+Form Template Method
+Replace Inheritance with delegation
+Replace delegation with inheritance
+
+Aula 9 (16/12/2021)
+
+UML
+Diagramas que representam a estrutura e o comportamento da aplicação
+
+Class Diagrams
+Representa as classes e relação entre elas, bem como implementar as operações
+dos atributos de cada uma.
+Modelação conceptual do domínimo do software e os seus componentes
+A representação de cada classe vai ao encontro do que se aprende em Base de Dados:
+symbol atributeName : atributeType
+com o símbolo podendo ser de três tipos:
+   "-" para atributos / métodos privados
+   "+" para atributos / métodos públicos
+   "*" para atributos / métodos protegidos
 
