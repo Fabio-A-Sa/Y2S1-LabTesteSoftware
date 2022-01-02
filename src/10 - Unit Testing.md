@@ -65,10 +65,28 @@ no resultado de um conjunto de testes de outra.
 ### Test Doubles
 objectos que ajudam a minimizar a complexidade dos testes e de certa forma a que os testes sejam independentes do resto do sistema. `JMockit` e `Spock` são duas frameworks que implementam e manipulam estes dois tipos. São exemplos:
 
-### 1 - Stubs
+#### 1 - Stubs
 Objectos que imitam os do sistema, capazes de retornar valores predefinidos
 
-### 2 - Mocks
+#### 2 - Mocks
 É possível testar como a função é chamada, com que argumentos, como é o seu estado, comportamento e quantas vezes o método é chamado.
 
 ## Component Testing
+A maior parte das falhas deriva da interação entre unidades de código. Aqui os unit testings não conseguem apanhar os vários erros, teremos de usar o teste de interface.
+Testar tudo junto (All Together Testing, Big Bang Testing) se houver uma forte dependencia entre as unidades, quando algo
+falhar, se nos for difícil encontrar o bocado que faz falhar, usar o Step-by-Step Testing.
+O step-by-step pode subdividir-se em:
+
+- Bottom Up - combina testes de componentes que convém testar primeiro
+- Top Down - testar o sistema como um todo e recorrendo a mocks
+
+## Continuous Integration
+Através de testes de software, builds privados e builds públicos para que exista colaboração com a equipa.
+
+- `Mainline` - master/main do código no git
+- `Develop` - branch de desenvolvimento, a usar por todos os colaboradores. Só se dá merge na main do projecto se passar nos testes no escopo privado (unit testing)
+- `Integration build` - um build periódico, para garantir que o código modificado por todos continua a funcionar correctamente em conjunto
+- `Smoke test` - testes para garantir que nada foi quebrado aquando do merge do código modificado por todos
+
+**@ Fábio Araújo de Sá** <br/>
+**2021/2022**
