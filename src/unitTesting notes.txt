@@ -145,3 +145,31 @@ Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
 refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
 
+1 - Bloaters
+Quando
+
+Alguns exemplos
+
+Long Method - métodos maiores de 15 linhas normalmente podem ser partidos em várias
+              outras partes e não permite uma verificação de erros rápida
+
+Large Classes - normalmente as classes longas são aquelas que fazem de tudo um pouco,
+                o que causa alguma confusão no código no geral
+
+Primitive Obsession - uso excessivo de primitivas, não usando os correspondentes objectos
+
+Long Parameter List - métodos que são chamados com uma grande lista de parametros, mais
+                        que quatro já não é adequado
+
+Data clumbs - partes diferentes do código possuem grupos de identicas variáveis, originando
+                mais erros e mais problemas ao refactorar
+
+
+2 - Object oriented abusers
+
+Alguns exemplos:
+
+Switch statements - abuso da utilizaçção de switch e de if..else em métodos
+Temporary Field - uma classe que
+
+
