@@ -247,3 +247,14 @@ Substitute algorithm - simplificar o código para uma futura manutenção
 
 2 - Moving features between Objects
 
+Move method
+Move class
+Extract class
+Inline class
+Hide Delegate - evitar dependências em classes terceiras
+Remove middle man
+Introduce foreign method
+Introduce local extension
+
+3 - Organizing Data
+
