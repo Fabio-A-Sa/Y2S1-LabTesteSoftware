@@ -123,7 +123,6 @@ Integration build - um build periódico, para garantir que o código modificado 
                     continua a funcionar correctamente
 Smoke test - testes para garantir que nada foi quebrado aquando do merge do código entre todos
 
-
 Design Patterns
 
 Factory Method
@@ -131,7 +130,6 @@ Definir uma interface para criar um objecto, mas deixar que as subclasses decida
 qual classe instanciar.
 Evitar repetições de código e problemas caso esse mesmo código tenha que sofrer alterações.
 Assim o código é modificado só num sítio e perpetuado por todo o projecto sem demais problemas
-
 
 Aula 8 (09/12/2021)
 
@@ -144,6 +142,7 @@ problemas de quebra de determinados parâmetros.
 Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
 refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
+Um bom site para aprender mais sobre code smells -> refactoring.guru
 
 1 - Bloaters
 Quando
@@ -164,7 +163,6 @@ Long Parameter List - métodos que são chamados com uma grande lista de paramet
 Data clumbs - partes diferentes do código possuem grupos de identicas variáveis, originando
                 mais erros e mais problemas ao refactorar
 
-
 2 - Object oriented abusers
 
 Alguns exemplos:
@@ -176,11 +174,57 @@ Temporary Field - uma classe que utiliza campos temporários, que ao não serem 
 
 Refuse bequest - confusão de subclasses e superclasses que, apesar de usarem os
                     mesmos métodos e atributos, são completamente diferentes. Exemplo:
-                    leg -> (dog || chair)
+                    Animal(leg) -> (dog || chair)
 
 Alternative Classes with different interfaces - classes muito idênticas mas com interfaces
                     diferentes
 
+3 - Change Preventers
+
+Alguns exemplos:
+
+Divergent change - necessidade de mudar muitas partes da classe para implementar uma nova
+                    feature ou método. É um sinal claro que existem problemas de estrutura no código
+                    e também dependências exageradas
+
+Shotgun Surgery - parecido com a anterior, mas em vez de alterar só a classe, altera mais
+                    partes do código no seu todo.
+
+Parallel inheritance hierarchies - há necessidade de criar uma subclasse noutro lado do código
+                        quando se cria um primeira subclasse. Sinal que há dependências em demasia
+
+4 - Dispensables
+Eliminação de código redundante.
+
+Alguns exemplos
+
+Comments - comentários desnecessários, que só poluem o código em si
+
+Duplicate code - em vez disso, criar uma classe ou um método em separado
+
+Lazy class - classe que não faz muito ou nada, que ao ser apagada pouco transtorno traz
+        ao código em si
+
+Data classes - classes que só tenham getters e setters
+
+Speculative Generality - implementar código que para já não é necessário, ou seja,
+                    há criação de lazy classes e temporary field
+
+5 - Couples
+Contribuem para que uma classe tenha bastantes
+
+Alguns exemplos
+
+Feature envy - Necessidade de um método invocar métodos de outras classes para
+                poder atuar. Indicação que é necessário transferir métodos para outras classes.
+
+Inappropriate Intimacy - quase o mesmo de cima. É um método que usa atributos de várias
+                            outras classes para poder funcionar tal como foi idealizado.
+
+Message chains - correntes de chamamentos entre classes, que poderiam fazer parte de uma classe auxiliar
+
+Middle man - um método intermédio que não altera nenhum atributo
 
 
-
+Como encontrar algumas deste code smells automaticamente?
+bettercodehub.com, entrar com a conta do github
