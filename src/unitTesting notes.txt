@@ -225,6 +225,5 @@ Message chains - correntes de chamamentos entre classes, que poderiam fazer part
 
 Middle man - um método intermédio que não altera nenhum atributo
 
-
 Como encontrar algumas deste code smells automaticamente?
 bettercodehub.com, entrar com a conta do github
