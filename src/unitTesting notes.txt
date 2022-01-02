@@ -1,29 +1,3 @@
-
-
-Component Testing
-A maior parte das falhas deriva da interação entre unidades de código. Aqui os unit testings
-não conseguem apanhar, teremos de usar o teste de interface.
-Testar tudo junto (all together testing, big bang testing) se houver uma forte dependencia entre as unidades, quando algo
-falhar, se nos for difícil encontrar o bocado que faz falhar, usar o unit testing (step-by-step)
-
-Vantagens do big bang testing / all together testing
-Precisamos de poucos testes, executa mais rápido
-Os erros não são fáceis de apanhar
-
-Bottom up - combina testes de componentes que convém perguntar primeiro
-tOP DOWN - testar o sistema como um todo e recorrendo a mocks
-
-Continuous integration
-através de testes de software, builds privados e builds públicos para que exista
-colaboração com a equipa.
-
-Mainline - master/main do código no github por exemplo
-Develop - branch de desenvolvimento, a usar por todos os colaboradores. só se dá merge
-            na main se passar nos testes no escopo privado (unit testing)
-Integration build - um build periódico, para garantir que o código modificado por todos
-                    continua a funcionar correctamente
-Smoke test - testes para garantir que nada foi quebrado aquando do merge do código entre todos
-
 Design Patterns
 
 Factory Method
