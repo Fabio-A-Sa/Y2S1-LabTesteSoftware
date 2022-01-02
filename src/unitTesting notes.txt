@@ -81,8 +81,19 @@ White Box Testing:
 Black Box Testing:
 
     Equivalence partitioning;
-    
+    Generalizar os testes para valores que estejam dentro da mesma partição
 
     Boundary value analysis;
+    Avaliar os limites de cada partição, no ponto exato e em valores próximos aos
+    valores de fronteira.
 
+Dependency injection
+Uma forma de isolar as classes, para que a implementação de uma não interfira totalmente
+nos testes de outra. Implica não isolar
+
+Test Doubles
+Diferença entre mocks e stubs
+Stubs - programados para retornar valores predefinidos
+Mocks - é possível testar como a função é chamada, com que argumentos, como é o seu estado, comportamento e quantas vezes
+        o método é chamado. JMockit e Spock, por exemplo.
 
