@@ -13,7 +13,7 @@
     - Muito pouco automatizado, levando muito tempo a preparar e executar as verificações;
 
 Atualmente as frameworks `JUnit` e `Spock` garantem uma automatização de testes e permitem que o desenvolvedor se foque somente nos testes e não na implementação. Há, por isso, três etapas principais no processo da escrita de um teste: <br>
-#### setup() / @Before: comando que é executado antes de cada teste, para preparar o sistema
+##### setup() / @Before: comando que é executado antes de cada teste, para preparar o sistema
 ##### test() / @Test: o teste propriamente dito, com asserts ou verificações
 ##### cleanUp() / @After: para preservar as suas propriedades que possam ter sido modificadas ao longo do teste
 
@@ -48,12 +48,12 @@ Avaliar os limites de cada partição, no ponto exato e em valores próximos aos
 ##### 2.1 - Statement coverage
 Testes que executam os caminhos pelo menos uma vez
 
-##### 2.2 - Branch coverage;
+##### 2.2 - Branch coverage
 Todas as condições booleanas são avaliadas pelo menos uma vez (não combinadas)
 
-##### 2.3 - Path coverage;
+##### 2.3 - Path coverage
 Todas as condições booleanas são avaliadas, com todas as combinações possíveis de falso e verdadeiro. Todos os caminhos independentes são executados pelo menos uma vez.
 
-##### 2.4 - Condition Coverage:
+##### 2.4 - Condition Coverage
 As condições booleanas combinadas são testadas com todas as combinações possíveis. Exemplo: para if (a and b) eram necessários 4 testes.
 
