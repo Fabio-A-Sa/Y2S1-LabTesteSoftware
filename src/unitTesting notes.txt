@@ -227,3 +227,23 @@ Middle man - um método intermédio que não altera nenhum atributo
 
 Como encontrar algumas deste code smells automaticamente?
 bettercodehub.com, entrar com a conta do github
+errorprone.info, desenvolvida pela Google que implementa as regras do Google Standard Guide
+fbinfer.com, desenvolvido pelo Facebook
+no gradle: id "org.kordamp.gradle.errorprone" version "0.47.0"
+
+Refactoring
+
+1 - Composing Methods
+
+Extract method - extrair linhas repetidas em vários locais e constituir um método em separado
+Inline method
+Extract variable
+Inline
+Replace Temporary with Query
+Split temporary variables - para uma melhor compreensão do código
+Remove assignmments to Parameters - usar e manipular variáveis locais em vez de parâmetros
+                            passados ao método
+Substitute algorithm - simplificar o código para uma futura manutenção
+
+2 - Moving features between Objects
+
