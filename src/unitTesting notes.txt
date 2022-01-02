@@ -1,18 +1,5 @@
 Vou colocar as notas aqui provisoriamente, depois decido se faço um markdown para esta parte da matéria
 
-Aula 4, gravação às @01:17:00 horas
-
-unit testing -> o que vamos focar nesta cadeira
-test doubles -> objectos que ajudam a minimizar a complexidade dos testes e de certa forma ajudar
-                a que os testes sejam independentes do resto do sistema. São exemplos:
-
-stubs - providencia respostas pré-programadas. Se a função receber x deverá retornar Y,
-        independentemente do resto do sistema
-
-mocks - espectativas quanto à programação. Usam-se diferentes frameworks, para esta cadeira apenas dois:
-        - Mockito, em Java
-        - Spock, em Groovy
-
 Aula 5, gravação (ver hoje de tarde)
 
 Testar o sistema (antigamente):
@@ -92,6 +79,18 @@ Uma forma de isolar as classes, para que a implementação de uma não interfira
 nos testes de outra. Implica não isolar
 
 Test Doubles
+
+unit testing -> o que vamos focar nesta cadeira
+test doubles -> objectos que ajudam a minimizar a complexidade dos testes e de certa forma ajudar
+                a que os testes sejam independentes do resto do sistema. São exemplos:
+
+stubs - providencia respostas pré-programadas. Se a função receber x deverá retornar Y,
+        independentemente do resto do sistema
+
+mocks - espectativas quanto à programação. Usam-se diferentes frameworks, para esta cadeira apenas dois:
+        - Mockito, em Java
+        - Spock, em Groovy
+
 Diferença entre mocks e stubs
 Stubs - programados para retornar valores predefinidos
 Mocks - é possível testar como a função é chamada, com que argumentos, como é o seu estado, comportamento e quantas vezes
