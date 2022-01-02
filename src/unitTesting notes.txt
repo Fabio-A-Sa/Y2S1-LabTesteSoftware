@@ -53,3 +53,27 @@ Detalhe para o projecto, 29:45 da aula 5
 
 Uso de testes - para verificar o comportamento do sistema em runtime
 Uso de revisões e inspeções - para algo que não é executável, porque os humanos são bons a ler descrições
+
+Quando parar de testar?
+
+Fault injection - adicionar falhas ao código para ver se o conjunto de testes os consegue apanhar.
+                  quanto maior o rácio falhas apanhadas / falhas injectadas, mais rigorosos são os testes
+
+Black Box testing - Não sabemos como está implementado o código
+White Box testing - Temos acesso ao código, conhece a implementação
+
+White Box Testing:
+
+    Statement coverage;
+    Testes que executam os testes pelo menos uma vez
+
+    Branch coverage;
+    
+
+    Path coverage;
+
+Black Box Testing:
+    Equivalence partitioning;
+    Boundary value analysis;
+
+
