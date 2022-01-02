@@ -65,15 +65,24 @@ White Box testing - Temos acesso ao código, conhece a implementação
 White Box Testing:
 
     Statement coverage;
-    Testes que executam os testes pelo menos uma vez
+    Testes que executam os caminhos pelo menos uma vez
 
     Branch coverage;
-    
+    Todas as condições booleanas são avaliadas pelo menos uma vez (não combinadas)
 
     Path coverage;
+    Todas as condições booleanas são avaliadas, com todas as combinações possíveis de
+    falso e verdadeiro. Todos os caminhos independentes são executados pelo menos uma vez.
+
+    Condition Coverage:
+    As condições booleanas combinadas são testadas com todas as combinações possíveis.
+    Exemplo: para if (a and b) eram necessários 4 testes.
 
 Black Box Testing:
+
     Equivalence partitioning;
+    
+
     Boundary value analysis;
 
 
