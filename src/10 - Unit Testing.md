@@ -56,4 +56,19 @@ Todas as condições booleanas são avaliadas, com todas as combinações possí
 
 ##### 2.4 - Condition Coverage
 As condições booleanas combinadas são testadas com todas as combinações possíveis. Exemplo: para if (a and b) eram necessários 4 testes.
+<br>
 
+## Dependency injection
+Uma forma de isolar as classes, para que a implementação de uma não interfira totalmente
+no resultado de um conjunto de testes de outra.
+
+### Test Doubles
+objectos que ajudam a minimizar a complexidade dos testes e de certa forma a que os testes sejam independentes do resto do sistema. `JMockit` e `Spock` são duas frameworks que implementam e manipulam estes dois tipos. São exemplos:
+
+### 1 - Stubs
+Objectos que imitam os do sistema, capazes de retornar valores predefinidos
+
+### 2 - Mocks
+É possível testar como a função é chamada, com que argumentos, como é o seu estado, comportamento e quantas vezes o método é chamado.
+
+## Component Testing
