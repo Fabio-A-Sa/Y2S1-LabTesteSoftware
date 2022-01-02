@@ -118,7 +118,18 @@ colaboração com a equipa.
 
 Mainline - master/main do código no github por exemplo
 Develop - branch de desenvolvimento, a usar por todos os colaboradores. só se dá merge
-            na main se passar nos testes no escopo privado
+            na main se passar nos testes no escopo privado (unit testing)
+Integration build - um build periódico, para garantir que o código modificado por todos
+                    continua a funcionar correctamente
+Smoke test - testes para garantir que nada foi quebrado aquando do merge do código entre todos
 
+
+Design Patterns
+
+Factory Method
+Definir uma interface para criar um objecto, mas deixar que as subclasses decidam
+qual classe instanciar.
+Evitar repetições de código e problemas caso esse mesmo código tenha que sofrer alterações.
+Assim o código é modificado só num sítio e perpetuado por todo o projecto sem demais problemas
 
 
