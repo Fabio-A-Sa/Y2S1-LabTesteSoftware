@@ -292,9 +292,13 @@ Representa as classes e relação entre elas, bem como implementar as operaçõe
 dos atributos de cada uma.
 Modelação conceptual do domínimo do software e os seus componentes
 A representação de cada classe vai ao encontro do que se aprende em Base de Dados:
+atributos
 symbol atributeName : atributeType
+atributos com valores por omissão
+symbol atributeName = atributeDefaultValue
 com o símbolo podendo ser de três tipos:
    "-" para atributos / métodos privados
    "+" para atributos / métodos públicos
    "*" para atributos / métodos protegidos
 
+symbol methodName(listParameters : parametersType) : returnType
