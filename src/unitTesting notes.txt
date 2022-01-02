@@ -310,9 +310,18 @@ Interfaces: o nome passa a ser <<Interface>> interfaceName e todas as classes qu
     a implementarem são ligadas por tracejado
 Dependência: representada por uma seta a tracejado, a apontar para a parte necessária
 
-
 Sequence Diagrams
 Representa a interação entre objectos numa ordem sequencial
 
 Lifeline - representa o tempo sequencial (uma linha do tempo)
-Actores - qualquer entidade externa que interaja com o sistema
+Actors - qualquer entidade externa que interaja com o sistema
+Message - traduzida por uma seta preenchida ou tracejada
+Activation - retângulo em cima da lifeline que representa o período que demora a
+            processar o pedido
+
+State Diagrams
+Representa os diversos estados da aplicação (inicial..final)
+
+Transitions: setas que possuem, na descrição, três coisas: o evento, que é uma chamada
+de uma função, um input, ..., uma guard (uma condição que tem de ser verdadeira para que
+a transição seja feita) e effect, o efeito da transição do objecto que se estava a manipular
