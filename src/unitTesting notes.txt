@@ -170,6 +170,17 @@ Data clumbs - partes diferentes do código possuem grupos de identicas variávei
 Alguns exemplos:
 
 Switch statements - abuso da utilizaçção de switch e de if..else em métodos
-Temporary Field - uma classe que
+
+Temporary Field - uma classe que utiliza campos temporários, que ao não serem preenchidos
+                    podem causar problemas futuros na implementação
+
+Refuse bequest - confusão de subclasses e superclasses que, apesar de usarem os
+                    mesmos métodos e atributos, são completamente diferentes. Exemplo:
+                    leg -> (dog || chair)
+
+Alternative Classes with different interfaces - classes muito idênticas mas com interfaces
+                    diferentes
+
+
 
 
