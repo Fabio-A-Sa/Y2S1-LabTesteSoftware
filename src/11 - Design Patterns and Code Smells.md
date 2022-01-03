@@ -25,14 +25,19 @@ Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vário
 
 - Primitive Obsession - uso excessivo de primitivas, não usando os correspondentes objectos
 
-Long Parameter List - métodos que são chamados com uma grande lista de parametros, mais
-que quatro já não é adequado
+- Long Parameter List - métodos que são chamados com uma grande lista de parametros, mais que quatro já não é adequado
 
-Data clumbs - partes diferentes do código possuem grupos de identicas variáveis, originando
-mais erros e mais problemas ao refactorar
+- Data clumbs - partes diferentes do código possuem grupos de identicas variáveis, originando mais erros e mais problemas ao refactorar
 
+#### 2 - Object Oriented Abusers
 
+- Switch statements - abuso da utilizaçção de switch e de if..else em métodos
 
+- Temporary Field - uma classe que utiliza campos temporários, que ao não serem preenchidos podem causar problemas futuros na implementação
+
+- Refuse bequest - confusão de subclasses e superclasses que, apesar de usarem os mesmos métodos e atributos, são completamente diferentes. Exemplo: Animal(leg) -> (dog || chair)
+
+- Alternative Classes with different interfaces - classes muito idênticas mas com interfaces diferentes
 
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
