@@ -59,5 +59,17 @@ Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vário
 
 - Speculative Generality - implementar código que para já não é necessário, ou seja, há criação de lazy classes e temporary field;
 
+#### 5 - Couples
+
+- Feature envy - Necessidade de um método invocar métodos de outras classes para poder atuar. Indicação que é necessário transferir métodos para outras classes;
+
+- Inappropriate Intimacy - quase o mesmo de cima. É um método que usa atributos de várias outras classes para poder funcionar tal como foi idealizado;
+
+- Message chains - correntes de chamamentos entre classes, que poderiam fazer parte de uma classe auxiliar;
+
+- Middle man - um método intermédio que não altera nenhum atributo;
+
+
+
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
