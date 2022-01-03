@@ -64,11 +64,28 @@ Representa a interação entre objectos numa ordem sequencial <br>
 
 ## 3 - State Diagrams
 
+Representa os diversos estados da aplicação (inicial, intermédio e final) <br>
 
+Transitions: setas que possuem, na descrição, três coisas:
+
+1 - O evento, que é uma chamada de uma função, um input; <br> 
+2 - Uma Guard, uma condição que tem de ser verdadeira para que a transição seja feita; <br>
+3 - Effect, o efeito da transição no objecto que se estava a manipular; <br>
+
+<br/>
+<p align = "center" >
+  <img 
+       title = "André Restivo State"
+       src = "../Images/activationSequence.png" 
+       alt = "André Restivo State" 
+    />
+</p>
+<br>
 
 ### Credits: <br>
 [UML Class Diagrams](https://web.fe.up.pt/~arestivo/presentation/uml-classes/#1), by André Restivo <br>
 [UML Sequence Diagrams](https://web.fe.up.pt/~arestivo/presentation/uml-sequence/#1), by André Restivo <br>
+[UML State Diagram](https://web.fe.up.pt/~arestivo/presentation/uml-state/#13), by André Restivo <br>
 
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
