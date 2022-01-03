@@ -1,6 +1,34 @@
 # UML
 
+Diagramas que representam a estrutura e o comportamento da aplicação. Podem ser de três tipos principais:
 
+- [x] Class Diagrams;
+- [x] Sequence Diagrams;
+- [x] State Diagrams;
+
+## 1 - Class Diagrams
+
+Representa as classes e relação entre elas, bem como indicação das operações e dos atributos de cada uma.
+Modelação conceptual do domínimo do software e os seus componentes.
+A representação de cada classe vai ao encontro do que se aprende em Base de Dados:
+
+Notas: <br>
+    - Para classes ou métodos abstractos, usar os seus nomes em *itálico*; <br>
+    - Cada método ou atributo é precedido por um símbolo. São eles: <br>
+        - "+", se o método ou atributo for público; <br>
+        - "-", se o método ou atributo for privado; <br>
+        - "*", se o método ou atributo for protegido; <br>
+    - Há associações bidirecionais (por padrão) e associações unidirecionais, com a seta a apontar para o objecto que conhece; <br>
+    - As interfaces possuem <<Interface>> antes do nome da tabela e as suas implementações são sinalizadas por uma seta a tracejado; <br>
+    - As dependências também são identificadas por uma seta a tracejado, a apontar para a parte necessária; <br>
+
+## 2 - Sequence Diagrams
+
+## 3 - State Diagrams
+
+### Credits: <br>
+[UML Class Diagrams](https://web.fe.up.pt/~arestivo/presentation/uml-classes/#1), by André Restivo <br>
+[UML Sequence Diagrams](https://web.fe.up.pt/~arestivo/presentation/uml-sequence/#1), by André Restivo <br>
 
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
