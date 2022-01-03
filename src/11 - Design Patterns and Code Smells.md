@@ -32,29 +32,30 @@ problemas de quebra de determinados parâmetros.
 
 #### 3 - Simplifying Conditional Expressions
 
-- Decompose conditional
-- Consolidate conditional expression
-Remove control flag
-Replace nested conditionals
-Introduce null objects
-Introduce assertions
+- Decompose conditional;
+- Consolidate conditional expression;
+- Remove control flag;
+- Replace nested conditionals;
+- Introduce null objects;
+- Introduce assertions;
 
 #### 4 - Symplifying method calls
 
 #### 5 - Dealing with generalizations
 
-Pull up field
-Pull up method
-Pull up constructor body
-Push down field
-Push down method
-Extract subclasses
-Extract superclasses
-Extract interfaces
-Colapse hierarchy
-Form Template Method
-Replace Inheritance with delegation
-Replace delegation with inheritance
+- Pull up field;
+- Pull up method;
+- Pull up constructor body;
+- Push down field;
+- Push down method;
+- Extract subclasses;
+- Extract superclasses;
+- Extract interfaces;
+- Colapse hierarchy;
+- Form Template Method;
+- Replace Inheritance with delegation;
+- Replace delegation with inheritance;
+<br>
 
 ### Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
