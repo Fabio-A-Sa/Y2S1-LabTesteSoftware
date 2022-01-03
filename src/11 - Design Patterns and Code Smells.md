@@ -69,7 +69,10 @@ Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vário
 
 - Middle man - um método intermédio que não altera nenhum atributo;
 
-
+### Como encontrar algumas deste code smells automaticamente?
+- [x] `bettercodehub.com` - entrar com a conta do github;
+- [x] `errorprone.info` - desenvolvida pela Google que implementa as regras do Google Standard Guide. No Gradle, colocar o código `id "org.kordamp.gradle.errorprone" version "0.47.0"` na parte das dependências;
+- [x] `fbinfer.com` - desenvolvido pelo Facebook;
 
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
