@@ -66,6 +66,16 @@ Representa a interação entre objectos numa ordem sequencial <br>
 
 Representa os diversos estados da aplicação (inicial, intermédio e final) <br>
 
+<br/>
+<p align = "center" >
+  <img 
+       title = "André Restivo Transition"
+       src = "../Images/transitionUML.png" 
+       alt = "André Restivo Transition" 
+    />
+</p>
+<br>
+
 Transitions: setas que possuem, na descrição, três coisas:
 
 1 - O evento, que é uma chamada de uma função, um input; <br> 
@@ -76,7 +86,7 @@ Transitions: setas que possuem, na descrição, três coisas:
 <p align = "center" >
   <img 
        title = "André Restivo State"
-       src = "../Images/activationSequence.png" 
+       src = "../Images/stateDiagram.png" 
        alt = "André Restivo State" 
     />
 </p>
