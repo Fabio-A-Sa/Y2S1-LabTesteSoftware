@@ -113,7 +113,7 @@ Refactoring
 Extract method - extrair linhas repetidas em vários locais e constituir um método em separado
 Inline method
 Extract variable
-Inline
+Inline variable
 Replace Temporary with Query
 Split temporary variables - para uma melhor compreensão do código
 Remove assignmments to Parameters - usar e manipular variáveis locais em vez de parâmetros
