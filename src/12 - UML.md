@@ -42,11 +42,29 @@ Tópicos relevantes: <br>
     />
 </p>
 <br>
-<br>
 
 ## 2 - Sequence Diagrams
 
+Representa a interação entre objectos numa ordem sequencial <br>
+
+- Lifeline - representa o tempo sequencial (uma linha do tempo)
+- Actors - qualquer entidade externa que interaja com o sistema
+- Message - traduzida por uma seta preenchida ou tracejada
+- Activation - retângulo em cima da lifeline que representa o período que demora a processar o pedido
+
+<br/>
+<p align = "center" >
+  <img 
+       title = "André Restivo Activation"
+       src = "../Images/activationSequence.png" 
+       alt = "André Restivo Activation" 
+    />
+</p>
+<br>
+
 ## 3 - State Diagrams
+
+
 
 ### Credits: <br>
 [UML Class Diagrams](https://web.fe.up.pt/~arestivo/presentation/uml-classes/#1), by André Restivo <br>

@@ -1,30 +1,3 @@
-Aula 9 (16/12/2021)
-
-UML
-Diagramas que representam a estrutura e o comportamento da aplicação
-
-Class Diagrams
-Representa as classes e relação entre elas, bem como implementar as operações
-dos atributos de cada uma.
-Modelação conceptual do domínimo do software e os seus componentes
-A representação de cada classe vai ao encontro do que se aprende em Base de Dados:
-atributos
-symbol atributeName : atributeType
-atributos com valores por omissão
-symbol atributeName = atributeDefaultValue
-com o símbolo podendo ser de três tipos:
-   "-" para atributos / métodos privados
-   "+" para atributos / métodos públicos
-   "*" para atributos / métodos protegidos
-
-symbol methodName(listParameters : parametersType) : returnType
-
-Nota:
-Para classes ou métodos abstratos, usar os seus nomes em itálico
-Há associações bidirecionais (por omissão) ou unidirecionais (usando a seta)
-Interfaces: o nome passa a ser <<Interface>> interfaceName e todas as classes que
-    a implementarem são ligadas por tracejado
-Dependência: representada por uma seta a tracejado, a apontar para a parte necessária
 
 Sequence Diagrams
 Representa a interação entre objectos numa ordem sequencial
