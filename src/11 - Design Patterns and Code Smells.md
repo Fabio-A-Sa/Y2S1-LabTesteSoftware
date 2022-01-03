@@ -12,6 +12,50 @@ para que exista uma melhor compreensão do que faz e como faz.
 Sempre que se faz uma refatorização, convém voltar a correr os testes para que não exista
 problemas de quebra de determinados parâmetros.
 
+#### 1 - Composing Methods
+
+- Extract method / variable - extrair linhas repetidas em vários locais e constituir um método em separado;
+- Inline method / variable - simplificar determinadas comparações de modo a só ocuparem uma linha;
+- Replace Temporary with Query - transformar comparações soltas num método próprio;
+- Split temporary variables - para uma melhor compreensão do código;
+- Remove assignmments to Parameters - usar e manipular variáveis locais em vez de parâmetros passados ao método;
+- Substitute algorithm - simplificar o código para uma futura manutenção;
+
+#### 2 - Moving features between Objects
+
+- Move method or class;
+- Extract method or class;
+- Hide Delegate - evitar dependências em classes terceiras;
+- Remove middle man - remover uma classe ou método que pouco faz;
+- Introduce foreign method - é melhor ter vários métodos do que um método que faça tudo;
+- Introduce local extension;
+
+#### 3 - Simplifying Conditional Expressions
+
+- Decompose conditional
+- Consolidate conditional expression
+Remove control flag
+Replace nested conditionals
+Introduce null objects
+Introduce assertions
+
+#### 4 - Symplifying method calls
+
+#### 5 - Dealing with generalizations
+
+Pull up field
+Pull up method
+Pull up constructor body
+Push down field
+Push down method
+Extract subclasses
+Extract superclasses
+Extract interfaces
+Colapse hierarchy
+Form Template Method
+Replace Inheritance with delegation
+Replace delegation with inheritance
+
 ### Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
 refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
@@ -70,6 +114,7 @@ Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vário
 - Middle man - um método intermédio que não altera nenhum atributo;
 
 ### Como encontrar algumas deste code smells automaticamente?
+
 - [x] `bettercodehub.com` - entrar com a conta do github;
 - [x] `errorprone.info` - desenvolvida pela Google que implementa as regras do Google Standard Guide. No Gradle, colocar o código `id "org.kordamp.gradle.errorprone" version "0.47.0"` na parte das dependências;
 - [x] `fbinfer.com` - desenvolvido pelo Facebook;
