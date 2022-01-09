@@ -26,20 +26,35 @@ problemas de quebra de determinados parâmetros.
 - Move method or class;
 - Extract method or class;
 - Hide Delegate - evitar dependências em classes terceiras;
-- Remove middle man - remover uma classe ou método que pouco faz;
+- Remove middle man - remover uma classe ou método intermédio que pouco faz;
 - Introduce foreign method - é melhor ter vários métodos do que um método que faça tudo;
 - Introduce local extension;
 
 #### 3 - Simplifying Conditional Expressions
 
-- Decompose conditional;
-- Consolidate conditional expression;
-- Remove control flag;
-- Replace nested conditionals;
-- Introduce null objects;
-- Introduce assertions;
+- Consolidate Conditional Expression;
+- Consolidate Duplicate Conditional Fragment;
+- Decompose Conditional;
+- Replace Conditional with Polymorphism;
+- Remove Control Flag;
+- Replaced Nested Conditional with Guard Clauses;
+- Introduce Null Object;
+- Introduce Assertion;
 
-#### 4 - Symplifying method calls
+#### 4 - Simplifying method calls
+
+- Add / Remove Parameter;
+- Rename Method;
+- Separate Query from Modifier;
+- Parameterize Method;
+- Introduce Parameter Object;
+- Preserve Whole Object;
+- Remove Settings Method;
+- Replace Parameters with Explicit Methods;
+- Replace Parameter with Method Call;
+- Hide Method;
+- Replace Error Code with Exception;
+- Replace Exception with Test;
 
 #### 5 - Dealing with generalizations
 
