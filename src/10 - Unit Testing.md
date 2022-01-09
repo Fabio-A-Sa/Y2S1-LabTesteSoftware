@@ -73,12 +73,12 @@ Objectos que imitam os do sistema, capazes de retornar valores predefinidos
 
 ## Component Testing
 A maior parte das falhas deriva da interação entre unidades de código. Aqui os unit testings não conseguem apanhar os vários erros, teremos de usar o teste de interface.
-Testar tudo junto (All Together Testing, Big Bang Testing) se houver uma forte dependencia entre as unidades, quando algo
-falhar, se nos for difícil encontrar o bocado que faz falhar, usar o Step-by-Step Testing.
+Testar tudo junto (All Together Testing -> Big Bang Integration) se houver uma forte dependência entre as unidades, quando algo
+falhar (precisamos de poucos testes, mais rápido, mas se algo bater mal não se sabe de onde vem o erro), se nos for difícil encontrar o bocado que faz falhar, usar o Step-by-Step Integration (desvantagem: ter mais testes, demorar mais tempo, muitas unidades; vantagens: ).
 O step-by-step pode subdividir-se em:
 
-- Bottom Up - combina testes de componentes que convém testar primeiro
-- Top Down - testar o sistema como um todo e recorrendo a mocks
+- Bottom Up Integration - combina testes de componentes que convém testar primeiro e depois tudo junto
+- Top Down Integration - testar o sistema como um todo e recorrendo a mocks para as dependências necessárias
 
 ## Continuous Integration
 Através de testes de software, builds privados e builds públicos para que exista colaboração com a equipa.
