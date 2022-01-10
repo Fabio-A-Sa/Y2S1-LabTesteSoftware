@@ -53,8 +53,8 @@ problemas de quebra de determinados parâmetros.
 - Replace Parameters with Explicit Methods - criar um setter para o valor X e outro para o valor Y, em vez de um setter para os dois;
 - Replace Parameter with Method Call - splitar o método que trabalha com vários parâmetros em vários só trabalhando com um;
 - Hide Method - tornar o método privado ou protegido quando é usado somente por um número restrito de classes;
-- Replace Error Code with Exception - ;
-- Replace Exception with Test - ;
+- Replace Error Code with Exception - se um método retornar algo inesperado, lançar uma excepção em vez de o detectar por if..else após o retorno;
+- Replace Exception with Test - às vezes não é necessário retornar uma excepção, basta retornar um valor lógico que nunca poderia ser o resultado. Por exemplo retornar -1 quando acontece um index out of the bound;
 
 #### 5 - Dealing with generalizations
 
