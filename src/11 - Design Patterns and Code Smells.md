@@ -32,14 +32,14 @@ problemas de quebra de determinados parâmetros.
 
 #### 3 - Simplifying Conditional Expressions
 
-- Consolidate Conditional Expression;
-- Consolidate Duplicate Conditional Fragment;
-- Decompose Conditional;
-- Replace Conditional with Polymorphism;
-- Remove Control Flag;
-- Replaced Nested Conditional with Guard Clauses;
-- Introduce Null Object;
-- Introduce Assertion;
+- Consolidate Conditional Expression - optar somente por if..else, when..then, em vez do tradicional switch ou mais ifs;
+- Consolidate Duplicate Conditional Fragment - juntar tudo numa condição, usando operador ternário;
+- Decompose Conditional - criar um if..else, com break, continue em vez de uma linha complexa de código;
+- Replace Conditional with Polymorphism - criar classes derivadas de uma geral de modo a partir as definições condicionais;
+- Remove Control Flag - às vezes não é necessário usar variáveis booleanas quando se pode ter somente ifs e elses;
+- Replaced Nested Conditional with Guard Clauses - avaliar as condições mais prováveis e deixar o retorno final livre de ifs;
+- Introduce Null Object - ter um objecto nulo que exibe o comportamento padrão do sistema;
+- Introduce Assertion - colocar asserts caso essa parte do código precise mesmo de ser verdadeira, em vez de um simples if..else;
 
 #### 4 - Simplifying method calls
 
