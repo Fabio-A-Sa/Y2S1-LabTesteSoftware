@@ -45,7 +45,7 @@ problemas de quebra de determinados parâmetros.
 
 - Add / Remove Parameter - colocar nas chamadas de métodos os parâmetros somente necessários;
 - Rename Method - escolher um nome que já indique o que o método faz;
-- Separate Query from Modifier - separar métodos que retornam coisas de métodos que modifificam coisas;
+- Separate Query from Modifier - separar métodos que retornam coisas de métodos que modificam coisas;
 - Parameterize Method - generalizar um método e colocar parâmetros específicos para situações específicas. É o funcionamento da class T em C++;
 - Introduce Parameter Object - substituir vários parâmetros por um objecto que os contenha;
 - Preserve Whole Object - passar o objecto inteiro em vez de os seus parâmetros, quando são muitos;
@@ -58,18 +58,16 @@ problemas de quebra de determinados parâmetros.
 
 #### 5 - Dealing with generalizations
 
-- Pull up field;
-- Pull up method;
-- Pull up constructor body;
-- Push down field;
-- Push down method;
-- Extract subclasses;
-- Extract superclasses;
-- Extract interfaces;
-- Colapse hierarchy;
-- Form Template Method;
-- Replace Inheritance with delegation;
-- Replace delegation with inheritance;
+- Pull up field / method - colocar na classe mãe o atributo ou método comum às classes filhas;
+- Pull up constructor body - chamar o construtor da classe super sempre que os atributos se repetirem;
+- Push down field / method - quando determinado atributo ou método é só usado em algumas classes filhas, colocar isso somente nas classes filhas;
+- Extract subclasses - criar classes filhas especializadas em determinados atributos;
+- Extract superclasses - criar uma classe mãe para classes que partilhem características idênticas;
+- Extract interfaces - criar uma interface que junta métodos idênticos a usar em determinadas classes;
+- Colapse hierarchy - juntar a classe mãe à classe filha se forem praticamente as mesmas;
+- Form Template Method - criar um template / abstract class para implementar divergências só nas classes que a extendem;
+- Replace Inheritance with delegation - criar um objecto como atributo que contenha os métodos menos usados da classe mãe;
+- Replace delegation with inheritance - usar a herança de uma classe mãe para implementar e aceder a métodos;
 <br>
 
 ### Code Smells
@@ -78,6 +76,7 @@ refactorização no sítio adequado o quanto antes. Não são detectados com bas
 Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vários exemplos de Code Smells:
 
 #### 1 - Bloaters
+Códigos, métodos e classes gigantes, que são difíceis de trabalhar e gerir. Aqui estão exemplos de como contornar este tipo de code smell:
 
 - Long Method - métodos maiores de 15 linhas normalmente podem ser partidos em várias outras partes e não permite uma verificação de erros rápida;
 
@@ -85,9 +84,9 @@ Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vário
 
 - Primitive Obsession - uso excessivo de primitivas, não usando os correspondentes objectos;
 
-- Long Parameter List - métodos que são chamados com uma grande lista de parametros, mais que quatro já não é adequado;
+- Long Parameter List - métodos que são chamados com uma grande lista de parâmetros, mais que quatro já não é adequado;
 
-- Data clumbs - partes diferentes do código possuem grupos de identicas variáveis, originando mais erros e mais problemas ao refactorar;
+- Data Clumbs - partes diferentes do código possuem grupos de idênticas variáveis, originando mais erros e mais problemas ao refactorar;
 
 #### 2 - Object Oriented Abusers
 
@@ -132,7 +131,11 @@ Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vário
 ### Como encontrar algumas deste code smells automaticamente?
 
 - [x] `bettercodehub.com` - entrar com a conta do github;
-- [x] `errorprone.info` - desenvolvida pela Google que implementa as regras do Google Standard Guide. No Gradle, colocar o código `id "org.kordamp.gradle.errorprone" version "0.47.0"` na parte das dependências;
+- [x] `errorprone.info` - desenvolvida pela Google que implementa as regras do Google Standard Guide. No Gradle, colocar o código na parte das dependências:
+
+````java
+id "org.kordamp.gradle.errorprone" version "0.47.0" ;
+````
 - [x] `fbinfer.com` - desenvolvido pelo Facebook;
 
 **@ Fábio Araújo de Sá** <br/>
