@@ -23,8 +23,8 @@ problemas de quebra de determinados parâmetros.
 
 #### 2 - Moving features between Objects
 
-- Move method or class;
-- Extract method or class;
+- Move method or class - quando determinados métodos são usados mais na classe que não é de origem;
+- Extract method or class - mover o método ou atributo para a zona onde é mais utilizado;
 - Hide Delegate - evitar dependências em classes terceiras;
 - Remove middle man - remover uma classe ou método intermédio que pouco faz;
 - Introduce foreign method - é melhor ter vários métodos do que um método que faça tudo;
