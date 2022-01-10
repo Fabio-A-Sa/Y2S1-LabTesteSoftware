@@ -14,12 +14,12 @@ problemas de quebra de determinados parâmetros.
 
 #### 1 - Composing Methods
 
-- Extract method / variable - extrair linhas repetidas em vários locais e constituir um método em separado;
-- Inline method / variable - simplificar determinadas comparações de modo a só ocuparem uma linha;
-- Replace Temporary with Query - transformar comparações soltas num método próprio;
-- Split temporary variables - para uma melhor compreensão do código;
-- Remove assignmments to Parameters - usar e manipular variáveis locais em vez de parâmetros passados ao método;
-- Substitute algorithm - simplificar o código para uma futura manutenção;
+- **Extract method / variable** - extrair linhas repetidas em vários locais e constituir um método em separado;
+- **Inline method / variable** - simplificar determinadas comparações de modo a só ocuparem uma linha;
+- **Replace Temporary with Query** - transformar comparações soltas num método próprio;
+- **Split temporary variables** - para uma melhor compreensão do código;
+- **Remove assignmments to Parameters** - usar e manipular variáveis locais em vez de parâmetros passados ao método;
+- **Substitute algorithm** - simplificar o código para uma futura manutenção;
 
 #### 2 - Moving features between Objects
 
