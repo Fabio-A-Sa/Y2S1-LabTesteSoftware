@@ -43,18 +43,18 @@ problemas de quebra de determinados parâmetros.
 
 #### 4 - Simplifying method calls
 
-- Add / Remove Parameter;
-- Rename Method;
-- Separate Query from Modifier;
-- Parameterize Method;
-- Introduce Parameter Object;
-- Preserve Whole Object;
-- Remove Settings Method;
-- Replace Parameters with Explicit Methods;
-- Replace Parameter with Method Call;
-- Hide Method;
-- Replace Error Code with Exception;
-- Replace Exception with Test;
+- Add / Remove Parameter - colocar nas chamadas de métodos os parâmetros somente necessários;
+- Rename Method - escolher um nome que já indique o que o método faz;
+- Separate Query from Modifier - separar métodos que retornam coisas de métodos que modifificam coisas;
+- Parameterize Method - generalizar um método e colocar parâmetros específicos para situações específicas. É o funcionamento da class T em C++;
+- Introduce Parameter Object - substituir vários parâmetros por um objecto que os contenha;
+- Preserve Whole Object - passar o objecto inteiro em vez de os seus parâmetros, quando são muitos;
+- Remove Settings Method - o Objecto deve ser definido aquando da sua criação, remover os métodos que façam isso futuramente;
+- Replace Parameters with Explicit Methods - criar um setter para o valor X e outro para o valor Y, em vez de um setter para os dois;
+- Replace Parameter with Method Call - splitar o método que trabalha com vários parâmetros em vários só trabalhando com um;
+- Hide Method - tornar o método privado ou protegido quando é usado somente por um número restrito de classes;
+- Replace Error Code with Exception - ;
+- Replace Exception with Test - ;
 
 #### 5 - Dealing with generalizations
 
