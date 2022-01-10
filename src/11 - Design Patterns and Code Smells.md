@@ -28,7 +28,7 @@ problemas de quebra de determinados parâmetros.
 - Hide Delegate - evitar dependências em classes terceiras;
 - Remove middle man - remover uma classe ou método intermédio que pouco faz;
 - Introduce foreign method - é melhor ter vários métodos do que um método que faça tudo;
-- Introduce local extension;
+- Introduce local extension - criar uma nova classe que contenha os métodos necessários de outra;
 
 #### 3 - Simplifying Conditional Expressions
 
