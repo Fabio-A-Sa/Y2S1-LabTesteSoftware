@@ -12,10 +12,11 @@ Hierarquias parte-todo, em que o cliente não se têm que preocupar com a parte 
 de manipular cada parte. Shape -> rectangle, circle, e só se manipula objectos que implementam Shape.
 
 ### Command
+Invocar objectos em vez de ações, assim terá um objecto-comando para cada objecto, que implementa um Command geral, e que
+permite obter um maior controlo sobre cada peça. Assim é fácil criar novos comandos para 
 
 
-
-### 2 - Refactoring
+## 2 - Refactoring
 Permite melhorar o desenho e estrutura do software, sem modificar o seu comportamento,
 para que exista uma melhor compreensão do que faz e como faz.
 Sempre que se faz uma refatorização, convém voltar a correr os testes para que não exista
@@ -79,7 +80,7 @@ problemas de quebra de determinados parâmetros.
 - **Replace delegation with inheritance** - usar a herança de uma classe mãe para implementar e aceder a métodos;
 <br>
 
-### 3 - Code Smells
+## 3 - Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
 refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
 Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vários exemplos de Code Smells:
