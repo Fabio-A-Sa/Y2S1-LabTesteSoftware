@@ -35,7 +35,18 @@ Criar um adaptador, que implementa um adaptador B que não está preparado para 
 Assim, cria-se algo que leva outros argumentos e que funciona bem para cada classe do sistema.
 
 ### Decorator
+Extender a funcionalidade de uma classe em tempo de execução, dinamicamente, causando uma explosão de classes. É
+mais flexível do que uma hereditariedade de classes estática, ou seja, em tempo de compilação.
 
+### Singleton
+Cria somente uma instância de uma classe. getInstance(), se for nulo retorna um novo objecto, se não for retorna o mesmo
+objecto. Existe um apontador global para verificar isso. Muito difícil de testar, nem os Mocks tradicionais o querem.
+
+### Abstract Factory
+Providencia uma interface que cria famílias de relações entre objectos sem especificar classes concretas. Os produtos
+não sabem exatamente como são implementados, ficando por isso isolados.
+
+### 
 
 ## 2 - Refactoring
 Permite melhorar o desenho e estrutura do software, sem modificar o seu comportamento,
