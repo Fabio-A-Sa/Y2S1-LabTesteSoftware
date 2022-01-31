@@ -3,12 +3,16 @@
 ## 1 - Design Patterns
 
 ### Factory Method
-Definir uma interface para criar um objecto, mas deixar que as subclasses decidam
-qual classe instanciar.
+Definir uma interface para criar um objecto, mas deixar que as subclasses decidam qual classe instanciar.
 Evitar repetições de código e problemas caso esse mesmo código tenha que sofrer alterações.
 Assim o código é modificado só num sítio e perpetuado por todo o projecto.
 
 ### Composite
+Hierarquias parte-todo, em que o cliente não se têm que preocupar com a parte mas sim com o todo, manipulando-o em vez 
+de manipular cada parte. Shape -> rectangle, circle, e só se manipula objectos que implementam Shape.
+
+### Command
+
 
 
 ### 2 - Refactoring
