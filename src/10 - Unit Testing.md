@@ -100,7 +100,21 @@ Usa um Arbitrary object, que é um objecto que reune números do tipo X, tal que
 números naturais. É um gerador de instâncias. Gera instâncias quase aleatórias, usando o módulo Statistics, reunindo primeiro casos onde
 normalmente existem erros. Exemplo: index 0, 1, -1, num array, ou arrayOutOfTheBounds.
 Shrinking, fazer exemplos mais curtos (exemplo, um path que leva o Hero a sair da arena) que sejam iguais aos exemplos ou
-contraexemplos maiores. Mais fáceis de computar.
+contraexemplos maiores. Mais fáceis de computar. Não é tarefa fácil gerar estes inputs mínimos que ainda assim invoca um problema.
+Pode-se usar o `jqwik`, que é uma framework para JVM.
+
+````java
+public void testSumPBT (@ForAll int a, @ForAll int b, @ForAll int c) {
+    System.out.println(a + " " + b + " " + c);
+    assert((a+b) + c == a + (b+c));
+}
+
+public void testNullPBT (@ForAll int a) {
+    assert(a + 0 == a);
+    assert(0 + a == a);
+    assert(a + 0 == 0 + a);
+}
+````
 
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
