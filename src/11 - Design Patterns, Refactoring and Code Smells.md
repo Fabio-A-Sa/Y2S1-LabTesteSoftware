@@ -12,8 +12,20 @@ Hierarquias parte-todo, em que o cliente não se têm que preocupar com a parte 
 de manipular cada parte. Shape -> rectangle, circle, e só se manipula objectos que implementam Shape.
 
 ### Command
-Invocar objectos em vez de ações, assim terá um objecto-comando para cada objecto, que implementa um Command geral, e que
-permite obter um maior controlo sobre cada peça. Assim é fácil criar novos comandos para 
+Invocar objectos em vez de ações, assim terá um objecto-comando para cada objecto, que implementa um Command geral, 
+e que permite obter um maior controlo sobre cada peça. Assim é fácil criar novos comandos para um objecto em específico.
+
+### Observer
+Um objecto observador vai receber uma ação e notificar outros objectos, manipulando-os conforme a ação e fazendo um 
+update automático.
+
+### Strategy
+Definir uma família de algoritmos encapsulados e imutáveis em relação a outros objectos, de forma a que o algoritmo
+dependa unicamente do cliente que a usa. Basicamente é criar métodos dentro da classe A que modificam a classe A sem
+sem existir outra classe que faça isso. Assim, o Cliente C apenas tem de chamar os métodos de A. 
+É o mais trivial Design Pattern.
+
+### State
 
 
 ## 2 - Refactoring
