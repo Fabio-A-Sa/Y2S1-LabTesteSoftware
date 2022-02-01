@@ -95,5 +95,10 @@ Através de testes de software, builds privados e builds públicos para que exis
 - `Integration build` - um build periódico, para garantir que o código modificado por todos continua a funcionar correctamente em conjunto
 - `Smoke test` - testes para garantir que nada foi quebrado aquando do merge do código modificado por todos
 
+## Property-Based Testing
+Usa um Arbitrary object, que é um objecto que reune números do tipo X, tal que X pertence a algum conjunto, por exemplos
+números naturais. É um gerador de instâncias. Gera instâncias quase aleatórias, reunindo primeiro casos onde
+normalmente existem erros. Exemplo: index 0, 1, -1, num array, ou arrayOutOfTheBounds.
+
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
