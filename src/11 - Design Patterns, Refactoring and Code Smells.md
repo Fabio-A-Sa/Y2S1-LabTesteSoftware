@@ -116,11 +116,11 @@ problemas de quebra de determinados parâmetros.
 
 ## 3 - Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
-refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
+refactoring no sítio adequado o quanto antes. Não são detectados com base em unit testing.
 Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vários exemplos de Code Smells:
 
 #### 1 - Bloaters
-Códigos, métodos e classes gigantes, que são difíceis de trabalhar e gerir. Aqui estão exemplos de como contornar este tipo de code smell:
+Códigos, métodos e classes gigantes que são difíceis de trabalhar e gerir. Aqui estão exemplos de como contornar este code smell:
 
 - **Long Method** - métodos maiores de 15 linhas normalmente podem ser partidos em várias outras partes e não permite uma verificação de erros rápida;
 - **Large Classes** - normalmente as classes longas são aquelas que fazem de tudo um pouco, o que causa alguma confusão no código geral;
@@ -130,7 +130,7 @@ Códigos, métodos e classes gigantes, que são difíceis de trabalhar e gerir. 
 
 #### 2 - Object Oriented Abusers
 
-- **Switch statements** - abuso da utilizaçção de switch e de if..else em métodos;
+- **Switch statements** - abuso da utilização de switch e de if/else em métodos;
 - **Temporary Field** - uma classe que utiliza campos temporários, que ao não serem preenchidos podem causar problemas futuros na implementação;
 - **Refuse bequest** - confusão de subclasses e superclasses que, apesar de usarem os mesmos métodos e atributos, são completamente diferentes. Exemplo: Animal(leg) -> (dog || chair);
 - **Alternative Classes with different interfaces** - classes muito idênticas mas com interfaces diferentes;
@@ -139,7 +139,7 @@ Códigos, métodos e classes gigantes, que são difíceis de trabalhar e gerir. 
 
 - **Divergent change** - necessidade de mudar muitas partes da classe para implementar uma nova feature ou método. É um sinal claro que existem problemas de estrutura no código e também dependências exageradas;
 - **Shotgun Surgery** - parecido com a anterior, mas em vez de alterar só a classe, altera mais partes do código no seu todo;
-- **Parallel inheritance hierarchies** - há necessidade de criar uma subclasse noutro lado do código quando se cria um primeira subclasse. Sinal que há dependências em demasia;
+- **Parallel inheritance hierarchies** - há necessidade de criar uma subclasse noutro lado do código quando se cria uma primeira subclasse. Sinal que há dependências em demasia;
 
 #### 4 - Dispensables
 
