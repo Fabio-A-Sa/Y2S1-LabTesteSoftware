@@ -46,7 +46,9 @@ objecto. Existe um apontador global para verificar isso. Muito difícil de testa
 Providencia uma interface que cria famílias de relações entre objectos sem especificar classes concretas. Os produtos
 não sabem exatamente como são implementados, ficando por isso isolados.
 
-### 
+### Architectural Patterns
+Por exemplo o MVC, Model, Viewer and Controller, que ficam encarregues de partes do jogo, sem colidirem nas suas
+funções ou métodos. Usado no projecto desta cadeira.
 
 ## 2 - Refactoring
 Permite melhorar o desenho e estrutura do software, sem modificar o seu comportamento,
