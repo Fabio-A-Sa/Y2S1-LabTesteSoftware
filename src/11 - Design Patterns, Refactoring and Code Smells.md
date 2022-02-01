@@ -26,6 +26,15 @@ sem existir outra classe que faça isso. Assim, o Cliente C apenas tem de chamar
 É o mais trivial Design Pattern.
 
 ### State
+Permite que um objecto altere o seu comportamento quando um estado interno for alterado. O objecto parecerá quase uma
+classe, pois cada estado deriva da classe principal. Exemplo: TCPConnection tem o TCPState, que pode ser Listen or
+Closed, dependendo do rumo da aplicação. Forma transições explícitas.
+
+### Adapter
+Criar um adaptador, que implementa um adaptador B que não está preparado para trabalhar com uma determinada classe.
+Assim, cria-se algo que leva outros argumentos e que funciona bem para cada classe do sistema.
+
+### Decorator
 
 
 ## 2 - Refactoring
