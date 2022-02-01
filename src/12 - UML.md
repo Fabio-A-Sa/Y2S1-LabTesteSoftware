@@ -49,8 +49,9 @@ Representa a interação entre objectos numa ordem sequencial <br>
 
 - Lifeline - representa o tempo sequencial (uma linha do tempo)
 - Actors - qualquer entidade externa que interaja com o sistema
-- Message - traduzida por uma seta preenchida ou tracejada
+- Message - traduzida por uma seta preenchida (envio, getPosition()) ou tracejada (retorno, heroPosition). Síncrona se a seta for preenchida, assíncrona caso contrário
 - Activation - retângulo em cima da lifeline que representa o período que demora a processar o pedido
+- Guards - uma espécie de chaves booleanas, colocado antes de uma mensagem.
 
 <br/>
 <p align = "center" >
