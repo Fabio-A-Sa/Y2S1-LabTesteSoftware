@@ -1,4 +1,6 @@
-# Design Patterns and Code Smells
+# Design Patterns, Refactoring and Code Smells
+
+## 1 - Design Patterns
 
 ### Factory Method
 Definir uma interface para criar um objecto, mas deixar que as subclasses decidam
@@ -6,7 +8,10 @@ qual classe instanciar.
 Evitar repetições de código e problemas caso esse mesmo código tenha que sofrer alterações.
 Assim o código é modificado só num sítio e perpetuado por todo o projecto.
 
-### Refactoring
+### Composite
+
+
+### 2 - Refactoring
 Permite melhorar o desenho e estrutura do software, sem modificar o seu comportamento,
 para que exista uma melhor compreensão do que faz e como faz.
 Sempre que se faz uma refatorização, convém voltar a correr os testes para que não exista
@@ -70,7 +75,7 @@ problemas de quebra de determinados parâmetros.
 - **Replace delegation with inheritance** - usar a herança de uma classe mãe para implementar e aceder a métodos;
 <br>
 
-### Code Smells
+### 3 - Code Smells
 Algo pode levar a problemas futuros no código e por isso deverá ser feita uma
 refactorização no sítio adequado o quanto antes. Não são detectados com base em unit testing.
 Um bom site para aprender mais sobre code smells: `refactoring.guru`. Há vários exemplos de Code Smells:
