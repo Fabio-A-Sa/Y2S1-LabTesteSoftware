@@ -97,8 +97,10 @@ Através de testes de software, builds privados e builds públicos para que exis
 
 ## Property-Based Testing
 Usa um Arbitrary object, que é um objecto que reune números do tipo X, tal que X pertence a algum conjunto, por exemplos
-números naturais. É um gerador de instâncias. Gera instâncias quase aleatórias, reunindo primeiro casos onde
+números naturais. É um gerador de instâncias. Gera instâncias quase aleatórias, usando o módulo Statistics, reunindo primeiro casos onde
 normalmente existem erros. Exemplo: index 0, 1, -1, num array, ou arrayOutOfTheBounds.
+Shrinking, fazer exemplos mais curtos (exemplo, um path que leva o Hero a sair da arena) que sejam iguais aos exemplos ou
+contraexemplos maiores. Mais fáceis de computar.
 
 **@ Fábio Araújo de Sá** <br/>
 **2021/2022**
