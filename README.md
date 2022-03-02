@@ -24,7 +24,7 @@ Varied exercises of easy, medium and difficult level, about the subject taught i
 A clone of the 90's game Supaplex. We play as Murphy, a very brave and adventurous red ball on a mission to capture Infotrons. During his quest he's faced with a series of challenges in the form of mazes which he must go through in order to find the Infotrons he needs. The mazes are dangerous places, filled with scissors which can cut Murphy down, and rocks which can crush him. Murphy must use his environment wisely to beat his challenges and reach the much desired EndBlock which takes him back home with his loot. <br>
 This project was developed with [Pedro Barbeira](https://github.com/pedrobarbeira) and [José Diogo](https://github.com/Zediogo96) during the semester.
 
-Project grade:
+Project grade: 15.3 / 20
 
 <br>
 
