@@ -50,3 +50,12 @@ As tesouras podem matar o Murphy e mudam de direção sempre que batem nalgum ob
 - Para entrar no curso precisam de saber programar?
 
 - O inglês é importante?
+
+---
+
+- **António Santos**
+- **Fábio Sá**
+- **João Pereira**
+- **Pedro Silva**
+
+@ 30/31 de Março de 2022
