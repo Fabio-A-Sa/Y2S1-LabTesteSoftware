@@ -20,6 +20,10 @@ Pieces of code for exercises and assessments, notes that I take during practical
 Notes that I take during theoretical lectures. <br/>
 Varied exercises of easy, medium and difficult level, about the subject taught in the present week. They complement the weekly work developed during the practical classes. <br/>
 
+### SPE - Semana Profissão Engenheiro 2022
+
+As part of the "Semana Profissão Engenheiro 2022", we were invited to present an area of `Software Design and Testing` over two days of activities by the faculty and in numerous lectures lasting 30 to 45 minutes. The guide and files presented are available. <br> 
+
 ### Project <br/>
 A clone of the 90's game Supaplex. We play as Murphy, a very brave and adventurous red ball on a mission to capture Infotrons. During his quest he's faced with a series of challenges in the form of mazes which he must go through in order to find the Infotrons he needs. The mazes are dangerous places, filled with scissors which can cut Murphy down, and rocks which can crush him. Murphy must use his environment wisely to beat his challenges and reach the much desired EndBlock which takes him back home with his loot. <br>
 This project was developed with [Pedro Barbeira](https://github.com/pedrobarbeira) and [José Diogo](https://github.com/Zediogo96) during the semester.
