@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPE - Semana Profissão: Engenheiro</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="antonio santos" />
+        <meta name="language" content="PT" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon-16x16.png">
+        <link rel="manifest" href="/imgs/site.webmanifest">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="projects.css">
+    </head>
+    <body>
+        <section id="page">
+            <nav>
+                <ul id="nav-items">
+                    <li><a href="index.html"><img src="imgs/logo.png" id="logo"></a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="projects/ootb.html">Out of the Breach</a></li>
+                    <li><a href="projects/supa.html">Supapl0x<a></li>
+                    <li><a href="ldts.html">LDTS<a></li>
+                </ul>
+            </nav>
+            <main>
+                <section class="content">
+                    <section id="intro">
+                        <div id="ootb">
+                            <a href="projects/ootb.html"><img src="imgs/outofthebreach1.jpg" id="banner-ootb"></a>
+                            <div id="ootb-info">
+                                <h2>Out of the Breach</h2>
+                                <p>Out of the Breach é um jogo feito em Java inspirado no jogo indie Into the Breach da Subset Games.</p>
+                                <p>Em Out of the Breach o jogador toma a posição dos aliens do jogo original, mantendo as mecânicas principais do seu predecessor, tal como defender estruturas e usar o ambiente como uma arma.</p>        
+                            </div>
+                        </div>
+                        <div id="supa">
+                            <a href="projects/supa.html"><img src="imgs/MainMenu.jpg" id="banner-supa"></a>
+                            <div id="supa-info">
+                                <h2>Supapl0x</h1>
+                                <p>Supapl0x é um jogo inspirado no famoso Supaplex dos anos 80. Desevolvido em Java, o objectivo principal é sobreviver a cada nível, tentando ao máximo somar pontos e desviar de possíveis inimigos.</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </section>
+        <script type="text/javascript">
+                const el = document.getElementById("banner-supa");
+                el.addEventListener("mouseover", () => {
+                    el.setAttribute("src", "imgs/Level1Complete.gif");
+                });
+                el.addEventListener("mouseout", () => {
+                    el.setAttribute("src", "imgs/MainMenu.jpg");
+
+                });
+                const el1 = document.getElementById("banner-ootb");
+                el1.addEventListener("mouseover", () => {
+                    el1.setAttribute("src", "imgs/ootb-gif.gif");
+                });
+                el1.addEventListener("mouseout", () => {
+                    el1.setAttribute("src", "imgs/outofthebreach1.jpg");
+                });
+        </script>
+    </body>
+</html>

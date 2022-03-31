@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPE - Semana Profissão: Engenheiro</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="antonio santos" />
+        <meta name="language" content="PT" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon-16x16.png">
+        <link rel="manifest" href="/imgs/site.webmanifest">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="slideshow.css">
+        <style>
+            .prev, .next {
+                padding-top: 27%
+            }
+        </style>
+    </head>
+    <body>
+        <section id="page">
+            <nav>
+                <ul id="nav-items">
+                    <li><a href="../index.html"><img src="../imgs/logo.png" id="logo"></a></li>
+                    <li><a href="../projects.html">Projetos</a></li>
+                    <li><a href="./ootb.html">Out of the Breach</a></li>
+                    <li><a href="./supa.html">Supapl0x<a></li>
+                    <li><a href="../ldts.html">LDTS<a></li>
+                </ul>
+            </nav>
+            <main>
+                <section class="content">
+                    <div id="slideshow">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides">
+                              <img src="../imgs/MainMenu.jpg">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <img src="../imgs/Level1Complete.gif">
+                            </div>                            
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+
+                        <div id="slideshow-content1">
+                            <h3 id="sl-h">Supapl0x</h3>
+                            <ul id="feats">
+                                <li id="feats-item"><p id="desc">Simulação de gravidade!</p></li>
+                                <li id="feats-item"><p id="desc">Vários níveis!</p></li>
+                                <li id="feats-item"><p id="desc">Sons!</p></li>
+                                <li id="feats-item"><p id="desc">SPRITES</p></li>
+                                </ul>
+                        </div>
+
+                        <div id="slideshow-content2" style="display: none;">
+                            <p id="desc">No Supapl0x o foco centrou-se em tentar criar um clone do original Supalex, para MS-DOS! A simplicidade do original foi de encontro às restrições do projeto e deixou espaço para fazermos as nossas melhorias sobre a fórmula do original.</p>
+                            <p></p>
+                            <p id="desc"><a href="https://github.com/Fabio-A-Sa/Y2S1-LabTesteSoftware/tree/main/Project">Repositório no github!</a></p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </body>
+    <script type="text/javascript" src="slideshow.js"></script>
+    <script type="text/javascript">
+        const slshow_1 = document.getElementById("slideshow-content1");
+        const slshow_2 = document.getElementById("slideshow-content2");
+
+        addEventListener("click", function(e) {
+            if (e.target.className == "prev" || e.target.className == "next") {
+                if (slshow_2.style.display == "none") {
+                    slshow_1.style.display = "none";
+                    slshow_2.style.display = "flex";
+                } else {
+                    slshow_1.style.display = "flex";
+                    slshow_2.style.display = "none";
+                }
+            }
+        });
+    
+    
+    </script>
+</html>
